@@ -65,7 +65,7 @@ nav {
 /* portada */
 .hero {
     height: 100vh;
-    background-image: url('../pagina_exemple/images/fons.jpeg'); 
+    background-image: url('./images/fons.jpeg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
