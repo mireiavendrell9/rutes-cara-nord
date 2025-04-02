@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacte - Rutes pels Ports</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+<button id="scrollTopBtn" onclick="scrollToTop()">▲ Tornar a dalt</button>
+   
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../pagina_exemple/images/logo.png" alt="Logo Cara Nord" class="logo-img">
+            <span class="logo-text">Rutes Cara Nord</span>
+        </div>
+    
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    
+        <ul class="menu">
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="sobre.html">Sobre Nosaltres</a></li>
+            <li><a href="rutes.html">Rutes</a></li>
+            <li><a href="calendari.html">Calendari</a></li>
+            <li><a href="pobles.html">Pobles</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+    </nav>
+   
+    <!-- SECCIÓ DEL CALENDARI  -->
+    <section class="calendari">
+        <h1>Calendari d'Activitats</h1>
+        <p>Consulta les properes rutes i apunta't a la que més t'interessi!</p>
+    
+        <!-- Calendari de Google -->
+        <iframe src="https://calendar.google.com/calendar/embed?src=mireiavendrellvila%40gmail.com&ctz=Europe/Madrid"
+            class="calendar-frame">
+        </iframe>
+       
+        <section class="recomanacions">
+            <h2> Recomanacions per a les rutes </h2>
+            <p>Abans d'apuntar-te a una activitat, tingues en compte aquests consells per gaudir al màxim de l'experiència:</p>
+        
+            <ul>
+                <li><i class="fas fa-hiking"></i> <strong>Equipament adequat:</strong> Porta roba còmoda, calçat de muntanya i protecció solar.</li>
+                <li><i class="fas fa-mountain"></i> <strong>Dificultat de la ruta:</strong> Consulta el nivell de dificultat i assegura't que s'adapta a la teva experiència.</li>
+                <li><i class="fas fa-cloud-sun"></i> <strong>Meteorologia:</strong> Comprova la previsió del temps abans de sortir.</li>
+                <li><i class="fas fa-leaf"></i> <strong>Respecte per la natura:</strong> No deixis residus i segueix els camins marcats.</li>
+                <li><i class="fas fa-tint"></i> <strong>Hidratació i alimentació:</strong> Porta suficient aigua i algun snack energètic.</li>
+            </ul>
+        </section>
+    
+        <!-- Llista d'activitats amb botons d'inscripció -->
+        
+
+    </section>  
+    <div class="taula-activitats">
+        <h2>Properes activitats</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>📅 Data</th>
+                    <th>🏞️ Activitat</th>
+                    <th>🎟️ Places Disponibles</th>
+                    <th>📝 Inscripció</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01 de març</td>
+                    <td>Ruta per la Fageda del Retaule</td>
+                    <td><span id="places-retaule">10</span></td>
+                    <td><button class="btn-inscripcio" onclick="reservarPlaça('places-retaule', this)">Apunta't</button></td>
+                </tr>
+                <tr>
+                    <td>17 de març</td>
+                    <td>Excursió a Les Roques de Benet</td>
+                    <td><span id="places-benet">15</span></td>
+                    <td><button class="btn-inscripcio" onclick="reservarPlaça('places-benet', this)">Apunta't</button></td>
+                </tr>
+                <tr>
+                    <td>24 de març</td>
+                    <td>Observació d’aus al Riu Sénia</td>
+                    <td><span id="places-senia">8</span></td>
+                    <td><button class="btn-inscripcio" onclick="reservarPlaça('places-senia', this)">Apunta't</button></td>
+                </tr>
+                <tr>
+                    <td>7 d’abril</td>
+                    <td>Ruta nocturna amb lluna plena</td>
+                    <td><span id="places-lluna">12</span></td>
+                    <td><button class="btn-inscripcio" onclick="reservarPlaça('places-lluna', this)">Apunta't</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+<footer>
+    <p>© 2025 Rutes Cara Nord </p>
+    <div class="xarxes">
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    </div>
+</footer>
+        <script src="../pagina_exemple/menu.js" defer></script>
+</html>   

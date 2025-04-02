@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacte - Rutes pels Ports</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+ <button id="scrollTopBtn" onclick="scrollToTop()">▲ Tornar a dalt</button>
+
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="../pagina_exemple/images/logo.png" alt="Logo Cara Nord" class="logo-img">
+            <span class="logo-text">Rutes Cara Nord</span>
+        </div>
+    
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+    
+        <ul class="menu">
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="sobre.html">Sobre Nosaltres</a></li>
+            <li><a href="rutes.html">Rutes</a></li>
+            <li><a href="calendari.html">Calendari</a></li>
+            <li><a href="pobles.html">Pobles</a></li>
+            <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+    </nav>
+
+   
+    <section class="contact">
+        <h1>Contacta'ns</h1>
+        <p>Omple el formulari següent i ens posarem en contacte amb tu el més aviat possible.</p>
+
+        <form action="mailto:rutes_caranord@gmail.com" method="post" enctype="text/plain">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="email">Correu electrònic:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="missatge">Missatge:</label>
+            <textarea id="missatge" name="missatge" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p>També ens pots escriure a: <a href="mailto:rutes_caranord@gmail.com">rutes_caranord@gmail.com</a></p>
+    
+    </section>
+    <section class="seccio preguntes-frequents">
+        <h2>❓ Preguntes Freqüents</h2>
+        <p>Resolem els teus dubtes abans que et decideixis a apuntar-te a una activitat.</p>
+    
+        <ul>
+            <li>
+                <strong><i class="fas fa-question-circle"></i> Quin nivell de dificultat tenen les rutes?</strong>
+                <p>Les rutes estan classificades segons la seva dificultat: fàcil, mitjana i difícil. A cada activitat trobaràs aquesta informació detallada.</p>
+            </li>
+            <li>
+                <strong><i class="fas fa-question-circle"></i> Què he de portar a una ruta?</strong>
+                <p>Es recomana portar roba còmoda, calçat adequat per a muntanya, aigua, protecció solar i algun snack energètic.</p>
+            </li>
+            <li>
+                <strong><i class="fas fa-question-circle"></i> Les rutes són aptes per a nens?</strong>
+                <p>Algunes rutes són aptes per a tota la família, mentre que d’altres poden tenir trams complicats. Consulta la informació abans d'inscriure't.</p>
+            </li>
+            <li>
+                <strong><i class="fas fa-question-circle"></i> Què passa si fa mal temps?</strong>
+                <p>Si les condicions meteorològiques no són segures, l’activitat es posposarà i s’informarà als participants amb antelació.</p>
+            </li>
+            <li>
+                <strong><i class="fas fa-question-circle"></i> Com puc contactar amb vosaltres?</strong>
+                <p>Pots escriure’ns a <a href="mailto:rutes_caranord@gmail.com">rutes_caranord@gmail.com</a> o a través del formulari de contacte.</p>
+            </li>
+        </ul>
+    </section> 
+    <footer>
+        <p>© 2025 Rutes Cara Nord </p>
+        <div class="xarxes">
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+    </footer>
+ <script src="../pagina_exemple/menu.js" defer></script>
+
+</body>
+</html>
