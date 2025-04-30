@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="ca">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacte - Rutes pels Ports</title>
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
-<button id="scrollTopBtn" onclick="scrollToTop()">▲ Tornar a dalt</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutes - Rutes pels Ports</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 
 <body>
-
     <nav>
         <div class="logo-container">
-            <img src="../pagina_exemple/images/logo.png" alt="Logo Cara Nord" class="logo-img">
+            <img src="images/logo.png" alt="Logo Cara Nord" class="logo-img">
             <span class="logo-text">Rutes Cara Nord</span>
         </div>
     
@@ -30,18 +28,41 @@
             <li><a href="contacte.html">Contacte</a></li>
         </ul>
     </nav>
-    
-<section>
- 
-</section>
+
+    <main>
+        <section class="mapa-rutes">
+          <h2>Descobreix les rutes del Parc Natural dels Ports</h2>
+          <p>Explora les rutes fàcils, moderades i difícils sobre el mapa interactiu. Fes clic sobre qualsevol traçat per veure més informació.</p>
+          <div class="map-container">
+            <iframe src="maps/mapa_rutes/qgis2web_2025_04_24-13_25_05_464169/index.html"
+            width="50%" height="200" style="border: none; margin-bottom: 20px;"></iframe>
+          </div>
+        </section>
+        <section class="galeria-fotos">
+            <h2>📸 Moments capturats</h2>
+            <div class="grid-galeria">
+                <img src="images/foto1.jpg" alt="Vista del Port">
+                <img src="images/foto2.jpg" alt="Sender entre arbres">
+                <img src="images/foto3.jpg" alt="Cabra salvatge">
+                <img src="images/foto4.jpg" alt="Roca imponent">
+                <img src="images/foto5.jpg" alt="Mirador natural">
+                <img src="images/foto6.jpg" alt="Mirador natural">
+                <img src="images/foto7.jpg" alt="Mirador natural">
+                <img src="images/foto8.jpg" alt="Mirador natural">
+            </div>
+        </section>
+      </main>
+
     <footer>
-        <p>© 2025 Rutes Cara Nord </p>
+        <p>© 2025 Rutes Cara Nord</p>
         <div class="xarxes">
             <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
             <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
             <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
-    <script src="../pagina_exemple/menu.js" defer></script>
+
+    <button id="scrollTopBtn" onclick="scrollToTop()">▲ Tornar a dalt</button>
+    <script src="menu.js" defer></script>
 </body>
 </html>
