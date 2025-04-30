@@ -1,96 +1,125 @@
 <!DOCTYPE html>
 <html lang="ca">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacte - Rutes pels Ports</title>
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre Nosaltres - Rutes pels Ports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body class="bg-success-subtle">
 
-<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+  <div class="container px-4">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="./images/logo.png" alt="Logo" width="50" class="me-2" />
+      <span>Rutes Cara Nord</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
+        <li class="nav-item"><a class="nav-link active" href="sobre.html">Sobre Nosaltres</a></li>
+        <li class="nav-item"><a class="nav-link" href="rutes.html">Rutes</a></li>
+        <li class="nav-item"><a class="nav-link" href="calendari.html">Calendari</a></li>
+        <li class="nav-item"><a class="nav-link" href="pobles.html">Pobles</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <nav>
-        <div class="logo-container">
-            <img src="./images/logo.png" alt="Logo Cara Nord" class="logo-img">
-            <span class="logo-text">Rutes Cara Nord</span>
+<!--  Secció Sobre Nosaltres -->
+<main class="container py-5 mt-5">
+  <h1 class="text-center mb-4">Sobre Nosaltres</h1>
+  <p class="text-center lead mb-5">
+    Explorar la natura és el primer pas per entendre-la, i entendre-la és essencial per protegir-la. 
+    Per això et guiem a través de les rutes més espectaculars dels Ports, fomentant un turisme responsable i conscient.
+  </p>
+
+  <div class="row g-4 justify-content-center">
+
+    <!-- Membre 1-->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 text-center shadow">
+        <img src="./images/mireia.png" class="card-img-top" alt="Mireia Vendrell">
+        <div class="card-body">
+          <h5 class="card-title">Mireia Vendrell</h5>
+          <p class="card-text">"La natura és el meu lloc segur, i compartir-la amb els altres és la meva passió."</p>
+          <ul class="list-unstyled text-start">
+            <li><i class="fas fa-leaf text-success me-2"></i>Educació ambiental</li>
+            <li><i class="fas fa-map-marker-alt text-success me-2"></i>Montcaro</li>
+            <li><i class="fas fa-envelope text-success me-2"></i>mireia@caranord.com</li>
+          </ul>
         </div>
-    
-        <button class="menu-toggle" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </button>
-    
-        <ul class="menu">
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="sobre.html">Sobre Nosaltres</a></li>
-            <li><a href="rutes.html">Rutes</a></li>
-            <li><a href="calendari.html">Calendari</a></li>
-            <li><a href="pobles.html">Pobles</a></li>
-            <li><a href="contacte.html">Contacte</a></li>
-        </ul>
-    </nav>
-    <section class="about">
-        <h1>Sobre Nosaltres</h1>
-        <p>Explorar la natura és el primer pas per entendre-la, i entendre-la és essencial per protegir-la. 
-            Creiem en la importància de conèixer i respectar el nostre entorn, perquè només qui la comprèn aprèn a estimar-la i protegir-la. 
-            Per això et guiem a través de les rutes més espectaculars dels Ports, fomentant un turisme responsable i conscient.</p>
-    
-        <div class="team"> 
-            <div class="team-member">
-                <img src="./images/mireia.png" alt="Mireia Vendrell">
-                <h3>Mireia Vendrell</h3>
-                <p>"La natura és el meu lloc segur, i compartir-la amb els altres és la meva passió."</p>
-                <ul class="info-extra">
-                    <li><i class="fas fa-leaf"></i> Especialitat: Educació ambiental</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Zona preferida: Montcaro</li>
-                    <li><i class="fas fa-envelope"></i> Contacte: mireia@caranord.com</li>
-                </ul>
-            </div>
-    
-            <div class="team-member">
-                <img src="./images/marc.png" alt="Xavi Solè">
-                <h3>Xavi Solè</h3>
-                <p>“Cada ruta és una aventura diferent. La natura mai deixa d’impressionar-me.”</p>
-                <ul class="info-extra">
-                    <li><i class="fas fa-hiking"></i> Especialitat: Ecoturisme i senderisme</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Zona preferida: Roques de Benet</li>
-                    <li><i class="fas fa-envelope"></i> Contacte: xavi@caranord.com</li>
-                </ul>
-            </div>
-    
-            <div class="team-member">
-                <img src="./images/laura.png" alt="Laura Ferrer">
-                <h3>Laura Ferrer</h3>
-                <p>“Una imatge val més que mil paraules, i la natura té històries increïbles per explicar.”</p>
-                <ul class="info-extra">
-                    <li><i class="fas fa-camera"></i> Especialitat: Fotografia de natura</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Zona preferida: Els Estrets d'Arnes</li>
-                    <li><i class="fas fa-envelope"></i> Contacte: laura@caranord.com</li>
-                </ul>
-            </div>
-            
-            <div class="team-member">
-                <img src="./images/francesc.png" alt="Francesc Barrena">
-                <h3>Francesc Barrena</h3>
-                <p>“Escoltar el cant d’un ocell i saber identificar-lo és com llegir un llibre de natura.”</p>
-                <ul class="info-extra">
-                    <li><i class="fas fa-dove"></i> Especialitat: Observació d’aus</li>
-                    <li><i class="fas fa-map-marker-alt"></i> Zona preferida: Bosc de les Fagedes</li>
-                    <li><i class="fas fa-envelope"></i> Contacte: francesc@caranord.com</li>
-                </ul>
-            </div>
-            
+      </div>
+    </div>
+
+    <!-- Membre 2-->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 text-center shadow">
+        <img src="./images/marc.png" class="card-img-top" alt="Xavi Solè">
+        <div class="card-body">
+          <h5 class="card-title">Xavi Solè</h5>
+          <p class="card-text">“Cada ruta és una aventura diferent. La natura mai deixa d’impressionar-me.”</p>
+          <ul class="list-unstyled text-start">
+            <li><i class="fas fa-hiking text-success me-2"></i>Ecoturisme i senderisme</li>
+            <li><i class="fas fa-map-marker-alt text-success me-2"></i>Roques de Benet</li>
+            <li><i class="fas fa-envelope text-success me-2"></i>xavi@caranord.com</li>
+          </ul>
         </div>
-    
-        </section>
-        <footer>
-            <p>© 2025 Rutes Cara Nord </p>
-            <div class="xarxes">
-                <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </footer>
-        <script src="./menu.js" defer></script>
-    </body>
-    </html>
+      </div>
+    </div>
+
+    <!-- Membre 3-->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 text-center shadow">
+        <img src="./images/laura.png" class="card-img-top" alt="Laura Ferrer">
+        <div class="card-body">
+          <h5 class="card-title">Laura Ferrer</h5>
+          <p class="card-text">“Una imatge val més que mil paraules, i la natura té històries increïbles per explicar.”</p>
+          <ul class="list-unstyled text-start">
+            <li><i class="fas fa-camera text-success me-2"></i>Fotografia de natura</li>
+            <li><i class="fas fa-map-marker-alt text-success me-2"></i>Els Estrets d'Arnes</li>
+            <li><i class="fas fa-envelope text-success me-2"></i>laura@caranord.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔸Membre 4-->
+    <div class="col-md-6 col-lg-3">
+      <div class="card h-100 text-center shadow">
+        <img src="./images/francesc.png" class="card-img-top" alt="Francesc Barrena">
+        <div class="card-body">
+          <h5 class="card-title">Francesc Barrena</h5>
+          <p class="card-text">“Escoltar el cant d’un ocell i saber identificar-lo és com llegir un llibre de natura.”</p>
+          <ul class="list-unstyled text-start">
+            <li><i class="fas fa-dove text-success me-2"></i>Observació d’aus</li>
+            <li><i class="fas fa-map-marker-alt text-success me-2"></i>Bosc de les Fagedes</li>
+            <li><i class="fas fa-envelope text-success me-2"></i>francesc@caranord.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-success text-white text-center py-4 mt-5">
+  <p class="mb-2">© 2025 Rutes Cara Nord</p>
+  <div>
+    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+<!-- Bootstrap Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,110 +1,139 @@
 <!DOCTYPE html>
 <html lang="ca">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacte - Rutes pels Ports</title>
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
-<button id="scrollTopBtn" onclick="scrollToTop()">▲ Tornar a dalt</button>
-   
-<body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calendari - Rutes pels Ports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-light">
 
-    <nav>
-        <div class="logo-container">
-            <img src="./images/logo.png" alt="Logo Cara Nord" class="logo-img">
-            <span class="logo-text">Rutes Cara Nord</span>
-        </div>
-    
-        <button class="menu-toggle" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </button>
-    
-        <ul class="menu">
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="sobre.html">Sobre Nosaltres</a></li>
-            <li><a href="rutes.html">Rutes</a></li>
-            <li><a href="calendari.html">Calendari</a></li>
-            <li><a href="pobles.html">Pobles</a></li>
-            <li><a href="contacte.html">Contacte</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-success navbar-dark fixed-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./images/logo.png" alt="Logo" width="50" class="me-2">
+        <span>Rutes Cara Nord</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nosaltres</a></li>
+          <li class="nav-item"><a class="nav-link" href="rutes.html">Rutes</a></li>
+          <li class="nav-item"><a class="nav-link active" href="calendari.html">Calendari</a></li>
+          <li class="nav-item"><a class="nav-link" href="pobles.html">Pobles</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
         </ul>
-    </nav>
-   
-    <!-- SECCIÓ DEL CALENDARI  -->
-    <section class="calendari">
-        <h1>Calendari d'Activitats</h1>
-        <p>Consulta les properes rutes i apunta't a la que més t'interessi!</p>
-    
-        <!-- Calendari de Google -->
-        <iframe src="https://calendar.google.com/calendar/embed?src=mireiavendrellvila%40gmail.com&ctz=Europe/Madrid"
-            class="calendar-frame">
-        </iframe>
-       
-        <section class="recomanacions">
-            <h2> Recomanacions per a les rutes </h2>
-            <p>Abans d'apuntar-te a una activitat, tingues en compte aquests consells per gaudir al màxim de l'experiència:</p>
-        
-            <ul>
-                <li><i class="fas fa-hiking"></i> <strong>Equipament adequat:</strong> Porta roba còmoda, calçat de muntanya i protecció solar.</li>
-                <li><i class="fas fa-mountain"></i> <strong>Dificultat de la ruta:</strong> Consulta el nivell de dificultat i assegura't que s'adapta a la teva experiència.</li>
-                <li><i class="fas fa-cloud-sun"></i> <strong>Meteorologia:</strong> Comprova la previsió del temps abans de sortir.</li>
-                <li><i class="fas fa-leaf"></i> <strong>Respecte per la natura:</strong> No deixis residus i segueix els camins marcats.</li>
-                <li><i class="fas fa-tint"></i> <strong>Hidratació i alimentació:</strong> Porta suficient aigua i algun snack energètic.</li>
-            </ul>
-        </section>
-    
-        <!-- Llista d'activitats amb botons d'inscripció -->
-        
+      </div>
+    </div>
+  </nav>
 
-    </section>  
-    <div class="taula-activitats">
-        <h2>Properes activitats</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>📅 Data</th>
-                    <th>🏞️ Activitat</th>
-                    <th>🎟️ Places Disponibles</th>
-                    <th>📝 Inscripció</th>
-                </tr>
+  <!-- Botó tornar a dalt -->
+  <button id="scrollTopBtn" onclick="scrollToTop()" class="btn btn-success position-fixed end-0 bottom-0 m-4" style="display:none;">▲ Tornar a dalt</button>
+
+  <!-- Calendari -->
+  <section class="pt-5 mt-5 bg-success-subtle text-center">
+    <div class="container py-5">
+      <h1 class="mb-3">Calendari d'Activitats</h1>
+      <p class="mb-4">Consulta les properes rutes i apunta't a la que més t'interessi!</p>
+
+      <div class="ratio ratio-16x9 mb-5">
+        <iframe src="https://calendar.google.com/calendar/embed?src=mireiavendrellvila%40gmail.com&ctz=Europe/Madrid" frameborder="0"></iframe>
+      </div>
+
+      <!-- Recomanacions -->
+      <div class="bg-white shadow rounded p-4 mb-5 mx-auto" style="max-width: 1000px;">
+        <h2 class="mb-3">Recomanacions per a les rutes</h2>
+        <p class="mb-4">Abans d'apuntar-te a una activitat, tingues en compte aquests consells per gaudir al màxim de l'experiència:</p>
+        <ul class="list-group list-group-flush text-start">
+          <li class="list-group-item"><i class="fas fa-hiking text-success me-2"></i><strong>Equipament adequat:</strong> roba còmoda, calçat de muntanya i protecció solar.</li>
+          <li class="list-group-item"><i class="fas fa-mountain text-success me-2"></i><strong>Dificultat de la ruta:</strong> assegura’t que s’adapta a la teva experiència.</li>
+          <li class="list-group-item"><i class="fas fa-cloud-sun text-success me-2"></i><strong>Meteorologia:</strong> consulta la previsió abans de sortir.</li>
+          <li class="list-group-item"><i class="fas fa-leaf text-success me-2"></i><strong>Respecte per la natura:</strong> no deixis residus i segueix els camins marcats.</li>
+          <li class="list-group-item"><i class="fas fa-tint text-success me-2"></i><strong>Hidratació i alimentació:</strong> porta aigua i un snack energètic.</li>
+        </ul>
+      </div>
+
+      <!-- Taula activitats -->
+      <div class="bg-white shadow rounded p-4 mx-auto" style="max-width: 1000px;">
+        <h2 class="mb-4">Properes activitats</h2>
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle">
+            <thead class="table-success">
+              <tr>
+                <th>📅 Data</th>
+                <th>🏞️ Activitat</th>
+                <th>🎟️ Places Disponibles</th>
+                <th>📝 Inscripció</th>
+              </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>01 de març</td>
-                    <td>Ruta per la Fageda del Retaule</td>
-                    <td><span id="places-retaule">10</span></td>
-                    <td><button class="btn-inscripcio" onclick="reservarPlaça('places-retaule', this)">Apunta't</button></td>
-                </tr>
-                <tr>
-                    <td>17 de març</td>
-                    <td>Excursió a Les Roques de Benet</td>
-                    <td><span id="places-benet">15</span></td>
-                    <td><button class="btn-inscripcio" onclick="reservarPlaça('places-benet', this)">Apunta't</button></td>
-                </tr>
-                <tr>
-                    <td>24 de març</td>
-                    <td>Observació d’aus al Riu Sénia</td>
-                    <td><span id="places-senia">8</span></td>
-                    <td><button class="btn-inscripcio" onclick="reservarPlaça('places-senia', this)">Apunta't</button></td>
-                </tr>
-                <tr>
-                    <td>7 d’abril</td>
-                    <td>Ruta nocturna amb lluna plena</td>
-                    <td><span id="places-lluna">12</span></td>
-                    <td><button class="btn-inscripcio" onclick="reservarPlaça('places-lluna', this)">Apunta't</button></td>
-                </tr>
+              <tr>
+                <td>01 de març</td>
+                <td>Ruta per la Fageda del Retaule</td>
+                <td><span id="places-retaule">10</span></td>
+                <td><button class="btn btn-success" onclick="reservarPlaça('places-retaule', this)">Apunta't</button></td>
+              </tr>
+              <tr>
+                <td>17 de març</td>
+                <td>Excursió a Les Roques de Benet</td>
+                <td><span id="places-benet">15</span></td>
+                <td><button class="btn btn-success" onclick="reservarPlaça('places-benet', this)">Apunta't</button></td>
+              </tr>
+              <tr>
+                <td>24 de març</td>
+                <td>Observació d’aus al Riu Sénia</td>
+                <td><span id="places-senia">8</span></td>
+                <td><button class="btn btn-success" onclick="reservarPlaça('places-senia', this)">Apunta't</button></td>
+              </tr>
+              <tr>
+                <td>7 d’abril</td>
+                <td>Ruta nocturna amb lluna plena</td>
+                <td><span id="places-lluna">12</span></td>
+                <td><button class="btn btn-success" onclick="reservarPlaça('places-lluna', this)">Apunta't</button></td>
+              </tr>
             </tbody>
-        </table>
+          </table>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center py-4 mt-5">
+    <p class="mb-2">© 2025 Rutes Cara Nord</p>
+    <div>
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    window.onscroll = function () {
+      document.getElementById("scrollTopBtn").style.display = window.scrollY > 300 ? "block" : "none";
+    };
+
+    function reservarPlaça(id, btn) {
+      let places = document.getElementById(id);
+      let num = parseInt(places.innerText);
+      if (num > 0) {
+        places.innerText = num - 1;
+        btn.innerText = "Inscrit!";
+        btn.disabled = true;
+      } else {
+        alert("Places esgotades!");
+      }
+    }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<footer>
-    <p>© 2025 Rutes Cara Nord </p>
-    <div class="xarxes">
-        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-    </div>
-</footer>
-        <script src="./menu.js" defer></script>
-</html>   
+</html>

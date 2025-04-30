@@ -1,94 +1,126 @@
 <!DOCTYPE html>
 <html lang="ca">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacte - Rutes pels Ports</title>
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
- <button id="scrollTopBtn" onclick="scrollToTop()">▲ Tornar a dalt</button>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacte - Rutes pels Ports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-light">
 
-<body>
-
-    <nav>
-        <div class="logo-container">
-            <img src="./images/logo.png" alt="Logo Cara Nord" class="logo-img">
-            <span class="logo-text">Rutes Cara Nord</span>
-        </div>
-    
-        <button class="menu-toggle" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </button>
-    
-        <ul class="menu">
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="sobre.html">Sobre Nosaltres</a></li>
-            <li><a href="rutes.html">Rutes</a></li>
-            <li><a href="calendari.html">Calendari</a></li>
-            <li><a href="pobles.html">Pobles</a></li>
-            <li><a href="contacte.html">Contacte</a></li>
+  <!--  Navbar -->
+  <nav class="navbar navbar-expand-lg bg-success navbar-dark fixed-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./images/logo.png" alt="Logo" width="50" class="me-2">
+        <span>Rutes Cara Nord</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nosaltres</a></li>
+          <li class="nav-item"><a class="nav-link" href="rutes.html">Rutes</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendari.html">Calendari</a></li>
+          <li class="nav-item"><a class="nav-link" href="pobles.html">Pobles</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contacte.html">Contacte</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-   
-    <section class="contact">
-        <h1>Contacta'ns</h1>
-        <p>Omple el formulari següent i ens posarem en contacte amb tu el més aviat possible.</p>
+  <!-- Botó de tornar a dalt -->
+  <button id="scrollTopBtn" onclick="scrollToTop()" class="btn btn-success position-fixed end-0 bottom-0 m-4" style="display:none;">▲ Tornar a dalt</button>
 
-        <form action="mailto:rutes_caranord@gmail.com" method="post" enctype="text/plain">
-            <label for="nom">Nom:</label>
-            <input type="text" id="nom" name="nom" required>
+  <!--  Formulari de contacte -->
+  <section class="py-5 mt-5 bg-success-subtle">
+    <div class="container text-center">
+      <h1 class="mb-3">Contacta'ns</h1>
+      <p class="mb-4">Omple el formulari següent i ens posarem en contacte amb tu el més aviat possible.</p>
 
-            <label for="email">Correu electrònic:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="missatge">Missatge:</label>
-            <textarea id="missatge" name="missatge" rows="5" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-
-        <p>També ens pots escriure a: <a href="mailto:rutes_caranord@gmail.com">rutes_caranord@gmail.com</a></p>
-    
-    </section>
-    <section class="seccio preguntes-frequents">
-        <h2>❓ Preguntes Freqüents</h2>
-        <p>Resolem els teus dubtes abans que et decideixis a apuntar-te a una activitat.</p>
-    
-        <ul>
-            <li>
-                <strong><i class="fas fa-question-circle"></i> Quin nivell de dificultat tenen les rutes?</strong>
-                <p>Les rutes estan classificades segons la seva dificultat: fàcil, mitjana i difícil. A cada activitat trobaràs aquesta informació detallada.</p>
-            </li>
-            <li>
-                <strong><i class="fas fa-question-circle"></i> Què he de portar a una ruta?</strong>
-                <p>Es recomana portar roba còmoda, calçat adequat per a muntanya, aigua, protecció solar i algun snack energètic.</p>
-            </li>
-            <li>
-                <strong><i class="fas fa-question-circle"></i> Les rutes són aptes per a nens?</strong>
-                <p>Algunes rutes són aptes per a tota la família, mentre que d’altres poden tenir trams complicats. Consulta la informació abans d'inscriure't.</p>
-            </li>
-            <li>
-                <strong><i class="fas fa-question-circle"></i> Què passa si fa mal temps?</strong>
-                <p>Si les condicions meteorològiques no són segures, l’activitat es posposarà i s’informarà als participants amb antelació.</p>
-            </li>
-            <li>
-                <strong><i class="fas fa-question-circle"></i> Com puc contactar amb vosaltres?</strong>
-                <p>Pots escriure’ns a <a href="mailto:rutes_caranord@gmail.com">rutes_caranord@gmail.com</a> o a través del formulari de contacte.</p>
-            </li>
-        </ul>
-    </section> 
-    <footer>
-        <p>© 2025 Rutes Cara Nord </p>
-        <div class="xarxes">
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <form action="mailto:rutes_caranord@gmail.com" method="post" enctype="text/plain" class="mx-auto bg-white p-4 rounded shadow" style="max-width: 600px;">
+        <div class="mb-3 text-start">
+          <label for="nom" class="form-label">Nom:</label>
+          <input type="text" id="nom" name="nom" class="form-control" required>
         </div>
-        
-    </footer>
- <script src="./menu.js" defer></script>
+        <div class="mb-3 text-start">
+          <label for="email" class="form-label">Correu electrònic:</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3 text-start">
+          <label for="missatge" class="form-label">Missatge:</label>
+          <textarea id="missatge" name="missatge" rows="5" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar</button>
+      </form>
 
+      <p class="mt-4">També ens pots escriure a: <a href="mailto:rutes_caranord@gmail.com">rutes_caranord@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Preguntes Freqüents -->
+  <section class="bg-success-subtle py-5">
+    <div class="container bg-white p-4 rounded shadow">
+      <h2 class="text-center mb-4">❓ Preguntes Freqüents</h2>
+      <p class="text-center mb-4">Resolem els teus dubtes abans que et decideixis a apuntar-te a una activitat.</p>
+
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">Quin nivell de dificultat tenen les rutes?</button></h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Les rutes estan classificades segons la seva dificultat: fàcil, mitjana i difícil. A cada activitat trobaràs aquesta informació detallada.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Què he de portar a una ruta?</button></h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Es recomana portar roba còmoda, calçat adequat per a muntanya, aigua, protecció solar i algun snack energètic.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">Les rutes són aptes per a nens?</button></h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Algunes rutes són aptes per a tota la família, mentre que d’altres poden tenir trams complicats. Consulta la informació abans d'inscriure't.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">Què passa si fa mal temps?</button></h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Si les condicions meteorològiques no són segures, l’activitat es posposarà i s’informarà als participants amb antelació.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">Com puc contactar amb vosaltres?</button></h2>
+          <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Pots escriure’ns a <a href="mailto:rutes_caranord@gmail.com">rutes_caranord@gmail.com</a> o a través del formulari de contacte.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Footer -->
+  <footer class="bg-success text-white text-center py-4 mt-5">
+    <p class="mb-2">© 2025 Rutes Cara Nord</p>
+    <div>
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    window.onscroll = function () {
+      document.getElementById("scrollTopBtn").style.display = window.scrollY > 300 ? "block" : "none";
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

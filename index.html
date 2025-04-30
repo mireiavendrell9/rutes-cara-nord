@@ -1,88 +1,112 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rutes pels Ports</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rutes pels Ports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-light">
 
-
-<nav>
-    <div class="logo-container">
-        <img src="./images/logo.png" alt="Logo Cara Nord" class="logo-img">
-        <span class="logo-text">Rutes Cara Nord</span>
+  <!--  NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-success navbar-dark fixed-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./images/logo.png" alt="Logo Cara Nord" width="50" height="50" class="me-2">
+        <span>Rutes Cara Nord</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nosaltres</a></li>
+          <li class="nav-item"><a class="nav-link" href="rutes.html">Rutes</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendari.html">Calendari</a></li>
+          <li class="nav-item"><a class="nav-link" href="pobles.html">Pobles</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <button class="menu-toggle">
-        <i class="fas fa-bars"></i>
-    </button>
+  <!--  HERO -->
+  <header class="vh-100 d-flex flex-column justify-content-center align-items-center text-white text-center bg-dark bg-opacity-75" style="background: url('./images/fons.jpeg') center/cover no-repeat;">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Benvingut al Parc natural dels Ports</h1>
+      <p class="lead">Prepara la motxilla, posa’t les botes i descobreix els racons més espectaculars d’aquest paradís natural!</p>
+    </div>
+  </header>
 
-    <ul class="menu">
-        <li><a href="index.html">Inici</a></li>
-        <li><a href="sobre.html">Sobre Nosaltres</a></li>
-        <li><a href="rutes.html">Rutes</a></li>
-        <li><a href="calendari.html">Calendari</a></li>
-        <li><a href="pobles.html">Pobles</a></li>
-        <li><a href="contacte.html">Contacte</a></li>
-    </ul>
-</nav>
+  <!-- BOTÓ TORNAR A DALT -->
+  <button id="scrollTopBtn" onclick="scrollToTop()" class="btn btn-success position-fixed end-0 bottom-0 m-4" style="display:none;">▲ Tornar a dalt</button>
 
-    
-    <header class="hero">
-        <h1>Benvingut al Parc natural dels Ports</h1>
-        <p>Prepara la motxilla, posa’t les botes i descobreix els racons més espectaculars d’aquest paradís natural!</p>
-    </header>
-    <button id="scrollTopBtn" onclick="scrollToTop()">▲ Tornar a dalt</button>
-    
-    <section class="video-section">
-        <h2>Endinsa’t a la natura salvatge dels Ports</h2>
-        <p>Gaudeix d’aquest vídeo per conèixer els paisatges espectaculars i les rutes que t’esperen.</p>
+  <!-- VÍDEO -->
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-3">Endinsa’t a la natura salvatge dels Ports</h2>
+      <p class="mb-4">Gaudeix d’aquest vídeo per conèixer els paisatges espectaculars i les rutes que t’esperen.</p>
+      <div class="ratio ratio-16x9">
+        <video controls>
+          <source src="./images/video.mp4" type="video/mp4">
+          El teu navegador no suporta vídeos HTML5.
+        </video>
+      </div>
+    </div>
+  </section>
 
-        <div class="video-container">
-            <iframe 
-                width="100%" 
-                height="500" 
-                src="./images/video.mp4"
-                title="Vídeo del Parc Natural dels Ports" 
-                frameborder="0" 
-                allowfullscreen>
-            </iframe>
+  <!-- DESTACATS -->
+  <section class="py-5 bg-success-subtle text-center">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 bg-white shadow rounded">
+            <i class="fas fa-mountain fa-2x text-success mb-3"></i>
+            <h3 class="h5">Paisatges Únics</h3>
+            <p>Un paradís natural on les muntanyes, els boscos i els rius s’entrellacen per oferir-te un espectacle visual inigualable.</p>
+          </div>
         </div>
-    </section>
-    
-    <section class="destacats">
-        <h2></h2>
-        <div class="destacats-container">
-            <div class="punt">
-                <i class="fas fa-mountain"></i>
-                <h3>Paisatges Únics</h3>
-                <p>Un paradís natural on les muntanyes, els boscos i els rius s’entrellacen per oferir-te un espectacle visual inigualable.</p>
-            </div>
-            <div class="punt">
-                <i class="fas fa-hiking"></i>
-                <h3>Rutes de Senderisme</h3>
-                <p>Descobreix itineraris per a tots els nivells, des de caminades fàcils fins a rutes d’alta muntanya.</p>
-            </div>
-            <div class="punt">
-                <i class="fas fa-paw"></i>
-                <h3>Flora i Fauna</h3>
-                <p>Explora la diversitat natural i observa espècies com la cabra salvatge o l’àguila daurada.</p>
-            </div>
+        <div class="col-md-4">
+          <div class="p-4 bg-white shadow rounded">
+            <i class="fas fa-hiking fa-2x text-success mb-3"></i>
+            <h3 class="h5">Rutes de Senderisme</h3>
+            <p>Descobreix itineraris per a tots els nivells, des de caminades fàcils fins a rutes d’alta muntanya.</p>
+          </div>
         </div>
-    </section>
-    
-    <footer>
-        <p>© 2025 Rutes Cara Nord </p>
-        <div class="xarxes">
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <div class="col-md-4">
+          <div class="p-4 bg-white shadow rounded">
+            <i class="fas fa-paw fa-2x text-success mb-3"></i>
+            <h3 class="h5">Flora i Fauna</h3>
+            <p>Explora la diversitat natural i observa espècies com la cabra salvatge o l’àguila daurada.</p>
+          </div>
         </div>
-    </footer>
-    
-    <script src="./menu.js"></script>
+      </div>
+    </div>
+  </section>
+
+  <!--  PEU DE PÀGINA -->
+  <footer class="bg-success text-white text-center py-4">
+    <p class="mb-2">© 2025 Rutes Cara Nord</p>
+    <div>
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!-- JS Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script scroll top -->
+  <script>
+    window.onscroll = function () {
+      document.getElementById("scrollTopBtn").style.display =
+        window.scrollY > 300 ? "block" : "none";
+    };
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>

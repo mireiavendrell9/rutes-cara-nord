@@ -1,68 +1,107 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rutes - Rutes pels Ports</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rutes - Rutes pels Ports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <style>
+    .galeria-fotos img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .grid-galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    iframe {
+      border-radius: 10px;
+    }
+  </style>
 </head>
 
-<body>
-    <nav>
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Logo Cara Nord" class="logo-img">
-            <span class="logo-text">Rutes Cara Nord</span>
-        </div>
-    
-        <button class="menu-toggle" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </button>
-    
-        <ul class="menu">
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="sobre.html">Sobre Nosaltres</a></li>
-            <li><a href="rutes.html">Rutes</a></li>
-            <li><a href="calendari.html">Calendari</a></li>
-            <li><a href="pobles.html">Pobles</a></li>
-            <li><a href="contacte.html">Contacte</a></li>
-        </ul>
-    </nav>
+<body class="bg-success-subtle">
 
-    <main>
-        <section class="mapa-rutes">
-          <h2>Descobreix les rutes del Parc Natural dels Ports</h2>
-          <p>Explora les rutes fàcils, moderades i difícils sobre el mapa interactiu. Fes clic sobre qualsevol traçat per veure més informació.</p>
-          <div class="map-container">
-            <iframe src="maps/mapa_rutes/qgis2web_2025_04_24-13_25_05_464169/index.html"
-            width="50%" height="200" style="border: none; margin-bottom: 20px;"></iframe>
-          </div>
-        </section>
-        <section class="galeria-fotos">
-            <h2>📸 Moments capturats</h2>
-            <div class="grid-galeria">
-                <img src="images/foto1.jpg" alt="Vista del Port">
-                <img src="images/foto2.jpg" alt="Sender entre arbres">
-                <img src="images/foto3.jpg" alt="Cabra salvatge">
-                <img src="images/foto4.jpg" alt="Roca imponent">
-                <img src="images/foto5.jpg" alt="Mirador natural">
-                <img src="images/foto6.jpg" alt="Mirador natural">
-                <img src="images/foto7.jpg" alt="Mirador natural">
-                <img src="images/foto8.jpg" alt="Mirador natural">
-            </div>
-        </section>
-      </main>
+<!--  Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="images/logo.png" alt="Logo" width="50" class="me-2" />
+      <span>Rutes Cara Nord</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
+        <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nosaltres</a></li>
+        <li class="nav-item"><a class="nav-link active" href="rutes.html">Rutes</a></li>
+        <li class="nav-item"><a class="nav-link" href="calendari.html">Calendari</a></li>
+        <li class="nav-item"><a class="nav-link" href="pobles.html">Pobles</a></li>
+        <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <footer>
-        <p>© 2025 Rutes Cara Nord</p>
-        <div class="xarxes">
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
+<!-- Contingut -->
+<main class="container py-5 mt-5">
 
-    <button id="scrollTopBtn" onclick="scrollToTop()">▲ Tornar a dalt</button>
-    <script src="menu.js" defer></script>
+  <!-- Mapa -->
+  <section class="text-center mb-5">
+    <h2 class="mb-3">Descobreix les rutes del Parc Natural dels Ports</h2>
+    <p class="lead">Explora les rutes fàcils, moderades i difícils sobre el mapa interactiu. Fes clic sobre qualsevol traçat per veure més informació.</p>
+    <div class="ratio ratio-16x9 mt-4">
+      <iframe src="maps/mapa_rutes/qgis2web_2025_04_24-13_25_05_464169/index.html" title="Mapa de Rutes" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section class="galeria-fotos mb-5">
+    <h2 class="text-center mb-4">📸 Moments capturats</h2>
+    <div class="grid-galeria">
+      <img src="images/foto1.jpg" alt="Vista del Port">
+      <img src="images/foto2.jpg" alt="Sender entre arbres">
+      <img src="images/foto3.jpg" alt="Cabra salvatge">
+      <img src="images/foto4.jpg" alt="Roca imponent">
+      <img src="images/foto5.jpg" alt="Mirador natural">
+      <img src="images/foto6.jpg" alt="Mirador natural">
+      <img src="images/foto7.jpg" alt="Mirador natural">
+      <img src="images/foto8.jpg" alt="Mirador natural">
+    </div>
+  </section>
+
+</main>
+
+<!-- 🔹 Footer -->
+<footer class="bg-success text-white text-center py-4">
+  <p class="mb-2">© 2025 Rutes Cara Nord</p>
+  <div>
+    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+  </div>
+</footer>
+
+<!-- Botó scroll top -->
+<button id="scrollTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+  class="btn btn-success position-fixed bottom-0 end-0 m-3 d-none">▲ Tornar a dalt</button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Mostrar botó quan es fa scroll
+  const scrollBtn = document.getElementById("scrollTopBtn");
+  window.addEventListener("scroll", () => {
+    scrollBtn.classList.toggle("d-none", window.scrollY < 300);
+  });
+</script>
+
 </body>
 </html>

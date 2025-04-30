@@ -1,143 +1,153 @@
 <!DOCTYPE html>
 <html lang="ca">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Contacte - Rutes pels Ports</title>
-        <link rel="stylesheet" href="style.css"> 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    </head>
-<button id="scrollTopBtn" onclick="scrollToTop()">▲ Tornar a dalt</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pobles - Rutes pels Ports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body class="bg-success-subtle">
 
-<body>
-
-    <nav>
-        <div class="logo-container">
-            <img src="./images/logo.png" alt="Logo Cara Nord" class="logo-img">
-            <span class="logo-text">Rutes Cara Nord</span>
-        </div>
-    
-        <button class="menu-toggle" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
-        </button>
-    
-        <ul class="menu">
-            <li><a href="index.html">Inici</a></li>
-            <li><a href="sobre.html">Sobre Nosaltres</a></li>
-            <li><a href="rutes.html">Rutes</a></li>
-            <li><a href="calendari.html">Calendari</a></li>
-            <li><a href="pobles.html">Pobles</a></li>
-            <li><a href="contacte.html">Contacte</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-success navbar-dark fixed-top">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="./images/logo.png" alt="Logo" width="50" class="me-2" />
+        <span>Rutes Cara Nord</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nosaltres</a></li>
+          <li class="nav-item"><a class="nav-link" href="rutes.html">Rutes</a></li>
+          <li class="nav-item"><a class="nav-link" href="calendari.html">Calendari</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pobles.html">Pobles</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    
-    <section class="pobles">
-        <h1>Pobles del Parc Natural dels Ports</h1>
-        <p>Descobreix els pobles amb més encant prop del Parc Natural dels Ports.</p>
+  <!-- Secció Pobles -->
+  <main class="container py-5 mt-5">
+    <h1 class="text-center mb-4">Pobles del Parc Natural dels Ports</h1>
+    <p class="text-center mb-5">Descobreix els pobles amb més encant prop del Parc Natural dels Ports.</p>
 
-       
-        <div class="poble poble-esquerra">
-            <img src="./images/pauls.png" alt="Paüls">
-            <div class="poble-text">
-                <h3>Paüls</h3>
-                <p> Paüls és un petit poble del Baix Ebre, situat a la falda del Parc Natural dels Ports i 
-                    envoltat de muntanyes i fonts naturals. Conserva un encant rural amb carrers estrets i 
-                    cases de pedra, destacant l’església de Sant Antoni Abat. És conegut per la seva producció
-                     d’oli d’oliva i per les seves cireres, així com per la Festa de l’Aigua, una celebració singular. 
-                     Amb un entorn ideal per al senderisme, és un destí perfecte per gaudir de la natura i la tranquil·litat.</p>
-            </div>
-        </div>
+    <!-- Llista de pobles -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="./images/pauls.png" alt="Paüls" class="img-fluid rounded shadow" />
+      </div>
+      <div class="col-md-6">
+        <h3>Paüls</h3>
+        <p> Paüls és un petit poble del Baix Ebre, situat a la falda del Parc Natural dels Ports i 
+            envoltat de muntanyes i fonts naturals. Conserva un encant rural amb carrers estrets i 
+            cases de pedra, destacant l’església de Sant Antoni Abat. És conegut per la seva producció
+             d’oli d’oliva i per les seves cireres, així com per la Festa de l’Aigua, una celebració singular. 
+             Amb un entorn ideal per al senderisme, és un destí perfecte per gaudir de la natura i la tranquil·litat.</p>
+      </div>
+    </div>
 
-        
-        <div class="poble poble-dreta">
-            <div class="poble-text">
-                <h3>Horta de Sant Joan</h3>
-                <p>Horta de Sant Joan, situat a la Terra Alta, és un poble ple d’història i encant dins del Parc Natural dels Ports. 
-                    Destaca per la seva relació amb Pablo Picasso, qui hi va passar dues estades i va afirmar que “tot el que sé ho vaig aprendre a Horta”. 
-                    El seu casc antic conserva un marcat aire medieval, amb edificis emblemàtics com l’Església de Sant Joan Baptista i l’Ajuntament renaixentista. 
-                    Envoltat d’un paisatge impressionant, amb la muntanya de Santa Bàrbara i oliveres centenàries, també és punt d’accés a rutes naturals com els 
-                    Estrets d’Arnes o la via verda de la Val de Zafán.</p>
-            </div>
-            <img src="./images/horta.png" alt="Horta de Sant Joan">
-        </div>
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="./images/horta.png" alt="Horta de Sant Joan" class="img-fluid rounded shadow" />
+      </div>
+      <div class="col-md-6">
+        <h3>Horta de Sant Joan</h3>
+        <p>Horta de Sant Joan, situat a la Terra Alta, és un poble ple d’història i encant dins del Parc Natural dels Ports. 
+            Destaca per la seva relació amb Pablo Picasso, qui hi va passar dues estades i va afirmar que “tot el que sé ho vaig aprendre a Horta”. 
+            El seu casc antic conserva un marcat aire medieval, amb edificis emblemàtics com l’Església de Sant Joan Baptista i l’Ajuntament renaixentista. 
+            Envoltat d’un paisatge impressionant, amb la muntanya de Santa Bàrbara i oliveres centenàries, també és punt d’accés a rutes naturals com els 
+            Estrets d’Arnes o la via verda de la Val de Zafán.</p>
+      </div>
+    </div>
 
-        
-        <div class="poble poble-esquerra">
-            <img src="./images/alfara.png" alt="Alfara de Carles">
-            <div class="poble-text">
-                <h3>Alfara de Carles</h3>
-                <p> Alfara de Carles és un petit poble del Baix Ebre, situat al cor del Parc Natural dels Ports i envoltat de muntanyes espectaculars. 
-                    Conegut per la seva gran riquesa natural, és un punt de partida ideal per a rutes de senderisme i excursions a llocs com els Estrets o la Cova Pintada. 
-                    El poble conserva un ambient rural autèntic, amb carrers tranquils i l’església de Sant Agustí com a element patrimonial destacat. També és famós per 
-                    les seves fonts naturals i pels productes locals com la mel i l’oli d’oliva. Un indret perfecte per desconnectar i gaudir de la natura en estat pur.</p>
-            </div>
-        </div>
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="./images/alfara.png" alt="Alfara de Carles" class="img-fluid rounded shadow" />
+      </div>
+      <div class="col-md-6">
+        <h3>Alfara de Carles</h3>
+        <p>Alfara de Carles és un petit poble del Baix Ebre, situat al cor del Parc Natural dels Ports i envoltat de muntanyes espectaculars. 
+            Conegut per la seva gran riquesa natural, és un punt de partida ideal per a rutes de senderisme i excursions a llocs com els Estrets o la Cova Pintada. 
+            El poble conserva un ambient rural autèntic, amb carrers tranquils i l’església de Sant Agustí com a element patrimonial destacat. També és famós per 
+            les seves fonts naturals i pels productes locals com la mel i l’oli d’oliva. Un indret perfecte per desconnectar i gaudir de la natura en estat pur.</p>
+      </div>
+    </div>
 
-    
-        <div class="poble poble-dreta">
-            <div class="poble-text">
-                <h3>Arnes</h3>
-                <p> Arnes és un encantador poble de la Terra Alta, situat a la vora del Parc Natural dels Ports i envoltat de paisatges de gran bellesa. 
-                    Destaca pel seu casc antic d’origen medieval, amb carrers empedrats i l’imponent Ajuntament renaixentista com a edifici més emblemàtic. 
-                    És un punt de partida ideal per explorar els Estrets d’Arnes, una espectacular zona de gorgs i parets rocoses perfectes per al senderisme i el barranquisme. 
-                    A més, el poble és conegut per la seva producció d’oli d’oliva verge extra i per mantenir viva l’essència rural i tranquil·la de la Terra Alta.</p>
-            </div>
-            <img src="./images/arnes.png" alt="Arnes">
-        </div>
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="./images/arnes.png" alt="Arnes" class="img-fluid rounded shadow" />
+      </div>
+      <div class="col-md-6">
+        <h3>Arnes</h3>
+        <p>Arnes és un encantador poble de la Terra Alta, situat a la vora del Parc Natural dels Ports i envoltat de paisatges de gran bellesa. 
+            Destaca pel seu casc antic d’origen medieval, amb carrers empedrats i l’imponent Ajuntament renaixentista com a edifici més emblemàtic. 
+            És un punt de partida ideal per explorar els Estrets d’Arnes, una espectacular zona de gorgs i parets rocoses perfectes per al senderisme i el barranquisme. 
+            A més, el poble és conegut per la seva producció d’oli d’oliva verge extra i per mantenir viva l’essència rural i tranquil·la de la Terra Alta.</p>
+      </div>
+    </div>
 
-        
-        <div class="poble poble-esquerra">
-            <img src="./images/prat.png" alt="Prat de Comte">
-            <div class="poble-text">
-                <h3>Prat de Comte</h3>
-                <p>Prat de Comte és un petit poble de la Terra Alta, situat a tocar del 
-                    Parc Natural dels Ports i envoltat d’un paisatge de muntanyes i boscos mediterranis. 
-                    Amb un casc antic ple d’encant, destaca per l’església de Sant Bartomeu i els seus carrerons 
-                    de pedra que conserven l’essència rural. És conegut per la seva tradició en la destil·lació d’aiguardent, 
-                    celebrant cada any la Fira de l’Aiguardent, una festa que posa en valor aquest producte artesanal.
-                    A més, el seu entorn ofereix rutes naturals ideals per al senderisme i l’excursionisme, fent d’aquest poble un 
-                    racó perfecte per desconnectar i gaudir de la tranquil·litat.</p>
-            </div>
-        </div>
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="./images/prat.png" alt="Prat de Comte" class="img-fluid rounded shadow" />
+      </div>
+      <div class="col-md-6">
+        <h3>Prat de Comte</h3>
+        <p>Prat de Comte és un petit poble de la Terra Alta, situat a tocar del 
+            Parc Natural dels Ports i envoltat d’un paisatge de muntanyes i boscos mediterranis. 
+            Amb un casc antic ple d’encant, destaca per l’església de Sant Bartomeu i els seus carrerons 
+            de pedra que conserven l’essència rural. És conegut per la seva tradició en la destil·lació d’aiguardent, 
+            celebrant cada any la Fira de l’Aiguardent, una festa que posa en valor aquest producte artesanal.
+            A més, el seu entorn ofereix rutes naturals ideals per al senderisme i l’excursionisme, fent d’aquest poble un 
+            racó perfecte per desconnectar i gaudir de la tranquil·litat.</p>
+      </div>
+    </div>
 
-        
-        <div class="poble poble-dreta">
-            <div class="poble-text">
-                <h3>Roquetes</h3>
-                <p>Roquetes és un municipi del Baix Ebre situat als peus del Parc Natural dels Ports, 
-                    just al costat de Tortosa. Destaca per acollir l’Observatori de l’Ebre, un centre científic 
-                    de referència en l’estudi del magnetisme terrestre i el clima espacial. 
-                    El poble combina un nucli urbà amb una important activitat agrícola, especialment en la producció de cítrics i oliveres. 
-                    A més, és una de les principals portes d’entrada als Ports, oferint accés a rutes de muntanya, 
-                    barrancs i espais naturals com el Mont-Caro, el cim més alt del massís. Amb la seva ubicació estratègica i el seu entorn natural privilegiat, 
-                    Roquetes és un punt clau per descobrir aquesta zona.</p>
-            </div>
-            <img src="./images/roquetes.png" alt="Roquetes">
-        </div>
+    <div class="row align-items-center mb-5 flex-md-row-reverse">
+      <div class="col-md-6">
+        <img src="./images/roquetes.png" alt="Roquetes" class="img-fluid rounded shadow" />
+      </div>
+      <div class="col-md-6">
+        <h3>Roquetes</h3>
+        <p>oquetes és un municipi del Baix Ebre situat als peus del Parc Natural dels Ports, 
+            just al costat de Tortosa. Destaca per acollir l’Observatori de l’Ebre, un centre científic 
+            de referència en l’estudi del magnetisme terrestre i el clima espacial. 
+            El poble combina un nucli urbà amb una important activitat agrícola, especialment en la producció de cítrics i oliveres. 
+            A més, és una de les principals portes d’entrada als Ports, oferint accés a rutes de muntanya, 
+            barrancs i espais naturals com el Mont-Caro, el cim més alt del massís. Amb la seva ubicació estratègica i el seu entorn natural privilegiat, 
+            Roquetes és un punt clau per descobrir aquesta zona.</p>
+      </div>
+    </div>
 
-        
-        <div class="poble poble-esquerra">
-            <img src="./images/lasenia.png" alt="La Sénia">
-            <div class="poble-text">
-                <h3>La Sénia</h3>
-                <p> La Sénia és un municipi situat al Montsià, a tocar del Parc Natural dels Ports i de la frontera amb el País Valencià. 
-                    Conegut pel seu passat industrial, ha estat històricament un centre de producció de mobles i fusta, aprofitant els abundants boscos dels Ports.
-                     El poble combina aquest llegat amb un entorn natural impressionant, oferint accés a paratges com els embassaments d’Ulldecona i la Fou, zones ideals per al senderisme 
-                     i l’excursionisme. A més, conserva un ric patrimoni històric, amb l’església de Sant Bartomeu i el llegat de la Guerra Civil visible en diferents espais de memòria. 
-                    La Sénia és un punt de trobada entre tradició, natura i història.</p>
-            </div>
-        </div>
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="./images/lasenia.png" alt="La Sénia" class="img-fluid rounded shadow" />
+      </div>
+      <div class="col-md-6">
+        <h3>La Sénia</h3>
+        <p>a Sénia és un municipi situat al Montsià, a tocar del Parc Natural dels Ports i de la frontera amb el País Valencià. 
+            Conegut pel seu passat industrial, ha estat històricament un centre de producció de mobles i fusta, aprofitant els abundants boscos dels Ports.
+             El poble combina aquest llegat amb un entorn natural impressionant, oferint accés a paratges com els embassaments d’Ulldecona i la Fou, zones ideals per al senderisme  i l’excursionisme. A més, conserva un ric patrimoni històric, amb l’església de Sant Bartomeu i el llegat de la Guerra Civil visible en diferents espais de memòria. La Sénia és un punt de trobada entre tradició, natura i història.</p>
+      </div>
+    </div>
+  </main>
 
-    </section>
-    <footer>
-        <p>© 2025 Rutes Cara Nord </p>
-        <div class="xarxes">
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-        </div>
-    </footer>
-    <script src="./menu.js" defer></script>
+  <!-- Footer -->
+  <footer class="bg-success text-white text-center py-4">
+    <p class="mb-2">© 2025 Rutes Cara Nord</p>
+    <div>
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+    </div>
+  </footer>
+
+  <!--  Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
