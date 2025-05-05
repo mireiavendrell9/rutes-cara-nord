@@ -37,3 +37,56 @@ function reservarPlaça(id, boto) {
         }
     }
 }
+const imatgesGaleria = [
+    "images/foto1.jpg",
+    "images/foto2.jpg",
+    "images/foto3.jpg",
+    "images/foto4.jpg",
+    "images/foto5.jpg",
+    "images/foto6.jpg",
+    "images/foto7.jpg",
+    "images/foto8.jpg"
+  ];
+  
+  let indexActual = 0;
+  let intervalSlider;
+  
+  function mostrarImatge(index) {
+    const img = document.getElementById("imatgeGaleria");
+    img.style.opacity = 0;
+  
+    setTimeout(() => {
+      img.src = imatgesGaleria[index];
+      img.style.opacity = 1;
+    }, 200);
+  }
+  
+  function canviarImatge(direccio) {
+    indexActual += direccio;
+    if (indexActual < 0) indexActual = imatgesGaleria.length - 1;
+    if (indexActual >= imatgesGaleria.length) indexActual = 0;
+    mostrarImatge(indexActual);
+  }
+  
+  function iniciarSlider() {
+    intervalSlider = setInterval(() => {
+      canviarImatge(1);
+    }, 5000);
+  }
+  
+  function aturarSlider() {
+    clearInterval(intervalSlider);
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    mostrarImatge(indexActual);
+    iniciarSlider();
+  
+    const imatge = document.getElementById("imatgeGaleria");
+  
+    // Atura el slider en passar el cursor per sobre
+    imatge.addEventListener("mouseover", aturarSlider);
+  
+    // Repren el slider en treure el cursor
+    imatge.addEventListener("mouseout", iniciarSlider);
+  });

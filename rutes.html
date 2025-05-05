@@ -57,20 +57,29 @@
   </section>
 
   <!-- Galeria -->
-  <section class="galeria-fotos mb-5 bg-verdfons">
+<section class="galeria-fotos mb-5 bg-verdfons">
+  <h2 class="text-center mb-4">📸 Moments capturats</h2>
 
-    <h2 class="text-center mb-4">📸 Moments capturats</h2>
-    <div class="grid-galeria">
-      <img src="images/foto1.jpg" alt="Vista del Port">
-      <img src="images/foto2.jpg" alt="Sender entre arbres">
-      <img src="images/foto3.jpg" alt="Cabra salvatge">
-      <img src="images/foto4.jpg" alt="Roca imponent">
-      <img src="images/foto5.jpg" alt="Mirador natural">
-      <img src="images/foto6.jpg" alt="Mirador natural">
-      <img src="images/foto7.jpg" alt="Mirador natural">
-      <img src="images/foto8.jpg" alt="Mirador natural">
+  <div class="container d-flex flex-column align-items-center">
+    <div class="position-relative" style="max-width: 500px; width: 100%;">
+      <img id="imatgeGaleria"
+           src="images/foto1.jpg"
+           alt="Vista del Port"
+           class="img-fluid rounded shadow imatge-galeria-unica">
+
+      <!-- Botons -->
+      <button onclick="canviarImatge(-1)"
+              class="btn btn-success position-absolute top-50 start-0 translate-middle-y ms-2">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <button onclick="canviarImatge(1)"
+              class="btn btn-success position-absolute top-50 end-0 translate-middle-y me-2">
+        <i class="fas fa-chevron-right"></i>
+      </button>
     </div>
-  </section>
+  </div>
+</section>
 
 </main>
 
