@@ -6,10 +6,11 @@
   <title>Contacte - Rutes pels Ports</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-light">
 
-  <!--  Navbar -->
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-success navbar-dark fixed-top">
     <div class="container-fluid px-4">
       <a class="navbar-brand d-flex align-items-center" href="index.html">
@@ -35,8 +36,8 @@
   <!-- Botó de tornar a dalt -->
   <button id="scrollTopBtn" onclick="scrollToTop()" class="btn btn-success position-fixed end-0 bottom-0 m-4" style="display:none;">▲ Tornar a dalt</button>
 
-  <!--  Formulari de contacte -->
-  <section class="py-5 mt-5 bg-success-subtle">
+  <!-- Contacte -->
+  <main class="py-5 mt-5 bg-verdfons">
     <div class="container text-center">
       <h1 class="mb-3">Contacta'ns</h1>
       <p class="mb-4">Omple el formulari següent i ens posarem en contacte amb tu el més aviat possible.</p>
@@ -59,41 +60,51 @@
 
       <p class="mt-4">També ens pots escriure a: <a href="mailto:rutes_caranord@gmail.com">rutes_caranord@gmail.com</a></p>
     </div>
-  </section>
+  </main>
 
   <!-- Preguntes Freqüents -->
-  <section class="bg-success-subtle py-5">
-    <div class="container bg-white p-4 rounded shadow">
+  <section class="bg-verdfons py-5">
+    <div class="bg-verdfons">
       <h2 class="text-center mb-4">❓ Preguntes Freqüents</h2>
       <p class="text-center mb-4">Resolem els teus dubtes abans que et decideixis a apuntar-te a una activitat.</p>
 
       <div class="accordion" id="faqAccordion">
         <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">Quin nivell de dificultat tenen les rutes?</button></h2>
+          <h2 class="accordion-header">
+            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">Quin nivell de dificultat tenen les rutes?</button>
+          </h2>
           <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
             <div class="accordion-body">Les rutes estan classificades segons la seva dificultat: fàcil, mitjana i difícil. A cada activitat trobaràs aquesta informació detallada.</div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Què he de portar a una ruta?</button></h2>
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Què he de portar a una ruta?</button>
+          </h2>
           <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body">Es recomana portar roba còmoda, calçat adequat per a muntanya, aigua, protecció solar i algun snack energètic.</div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">Les rutes són aptes per a nens?</button></h2>
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">Les rutes són aptes per a nens?</button>
+          </h2>
           <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body">Algunes rutes són aptes per a tota la família, mentre que d’altres poden tenir trams complicats. Consulta la informació abans d'inscriure't.</div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">Què passa si fa mal temps?</button></h2>
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">Què passa si fa mal temps?</button>
+          </h2>
           <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body">Si les condicions meteorològiques no són segures, l’activitat es posposarà i s’informarà als participants amb antelació.</div>
           </div>
         </div>
         <div class="accordion-item">
-          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">Com puc contactar amb vosaltres?</button></h2>
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">Com puc contactar amb vosaltres?</button>
+          </h2>
           <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body">Pots escriure’ns a <a href="mailto:rutes_caranord@gmail.com">rutes_caranord@gmail.com</a> o a través del formulari de contacte.</div>
           </div>
@@ -102,7 +113,7 @@
     </div>
   </section>
 
-  <!--  Footer -->
+  <!-- Footer -->
   <footer class="bg-success text-white text-center py-4 mt-5">
     <p class="mb-2">© 2025 Rutes Cara Nord</p>
     <div>

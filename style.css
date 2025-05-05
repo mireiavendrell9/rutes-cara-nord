@@ -1,7 +1,7 @@
 /* Reseteig bàsic */
 body {
     font-family: 'Times New Roman', serif;
-    background-color: #eef7ee;
+    background-color: #d9ede8;
     margin: 0;
     padding: 0;
 }
@@ -118,13 +118,16 @@ footer .xarxes a {
 footer .xarxes a:hover {
     color: greenyellow;
 }
+.bg-verdfons {
+    background-color: #d9ede8;
+}
 
 /* Recomanacions, preguntes, galeria */
 .recomanacions,
 .preguntes-frequents,
 .taula-activitats,
 .galeria-fotos {
-    background-color: white;
+    background-color: #d9ede8;
     border-radius: 10px;
     padding: 40px;
     margin: 40px auto;
@@ -172,7 +175,49 @@ footer .xarxes a:hover {
 #scrollTopBtn:hover {
     background-color: darkgreen;
 }
-
-#scrollTopBtn:hover {
-    background-color: darkgreen;
-}
+/* galeria */
+}.galeria-fotos {
+    background-color: #d9ede8;
+    padding: 60px 20px;
+    border-radius: 10px;
+  }
+  
+  .galeria-fotos img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  iframe {
+    border-radius: 10px;
+  }
+  /* Secció Pobles */
+  .poble {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #d9ede8;
+    border-bottom: 2px solid white; /* línia de separació */
+    padding: 30px 20px;
+  }
+  
+  .img-poble {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .poble-text {
+    flex: 1 1 400px;
+    text-align: justify;
+  }

@@ -1,97 +1,98 @@
-# 🏞️ Rutes Cara Nord
+🏞️ Rutes Cara Nord
 
-Una web pensada per a persones interessades en fer rutes de senderisme al Parc Natural dels Ports. L’objectiu és fomentar el turisme responsable, la connexió amb la natura i donar a conèixer els pobles i paisatges d’aquest entorn privilegiat. 🌿👣
+Rutes Cara Nord és una pàgina web creada per promoure el senderisme al Parc Natural dels Ports, un dels espais naturals més emblemàtics del sud de Catalunya. Aquesta plataforma ofereix informació sobre rutes, pobles, activitats i recomanacions, amb una clara voluntat de divulgació geogràfica i educativa.
 
----
+⸻
 
-## 1️⃣ Tema i motivació
+1⃣⃣ Tema i motivació
 
-Aquesta web sorgeix de la meva passió per la natura i el senderisme, i especialment pel Parc Natural dels Ports. 🌄
+El projecte neix de la passió per la natura, la muntanya i l’educació ambiental. Com a estudiant de Geografia, he volgut aplicar coneixements tècnics, cartogràfics i comunicatius per fer arribar aquest patrimoni natural al públic.
 
-L’objectiu és crear una eina clara i funcional per a excursionistes, famílies o persones que volen descobrir el territori. Està directament vinculada amb la Geografia, ja que treballa:
+🔍 Aquesta web pretén:
+	•	Fomentar el respecte pel medi ambient.
+	•	Posar en valor els pobles rurals de l’entorn.
+	•	Contribuir al turisme local sostenible.
+	•	Servir com a recurs per a estudiants i visitants.
 
-- L’ús del territori i el paisatge.
-- El coneixement dels espais naturals protegits.
-- La planificació territorial i la cartografia.
-- La geolocalització i l'accessibilitat de recursos digitals.
+⸻
 
----
+2⃣⃣ Dades i continguts
 
-## 2️⃣ Dades i continguts
+Fonts d’informació:
+	•	Textos propis basats en coneixements del Grau de Geografia i del cicle d’Educació Ambiental.
+	•	Informació complementària obtinguda de fonts oficials com el Parc Natural dels Ports.
 
-📸 **Fotos:** Realitzades per mi o extretes de fonts lliures (Pixabay, Unsplash) o del meu arxiu personal.
+Eines utilitzades:
+	•	QGIS per a la creació de les capes de rutes i punts.
+	•	Leaflet i qgis2web per crear el mapa interactiu exportable.
+	•	HTML, CSS, JS i Bootstrap per al desenvolupament web.
+	•	Visual Studio Code com a entorn de programació principal.
+	•	GitHub per allotjar la web i gestionar el control de versions,Git s’ha utilitzat per fer seguiment dels canvis, revertir errors i col·laborar de forma estructurada.
 
-📝 **Textos:** Redactats íntegrament per mi, basats en coneixements geogràfics, experiències personals i materials d'estudi.
+⸻
 
-🗺️ **Mapes:** Elaborats a partir de dades pròpies mitjançant QGIS i exportats com a mapa interactiu amb el plugin qgis2web (Leaflet).
+3⃣⃣ Estructura de la web
 
-🎨 **Estil:** Personalitzat amb CSS i posterior adaptació amb el framework Bootstrap 5.
+La web està estructurada de forma clara i bastant intuïtiva:
 
----
+Secció	Contingut principal
+Inici	Presentació visual i missatge d’introducció amb vídeo integrat
+Sobre nosaltres	Presentació de l’equip amb especialitats i frases personals
+Rutes	Mapa interactiu, galeria fotogràfica i itineraris
+Calendari	Taula d’activitats amb botó d’inscripció, informació per ruta i control d’aforament
+Pobles	Fitxes descriptives de municipis 
+Contacte	Formulari de contacte + Preguntes Freqüents 
 
-## 3️⃣ Estructura de la web
+⸻
 
-La web inclou les següents seccions:
+4⃣⃣ Web responsive i accessibilitat
 
-- **Inici:** presentació i vídeo del parc 🌿
-- **Sobre nosaltres:** equip de guies 🌟
-- **Rutes:** mapa interactiu i galeria de fotos 🗺️📷
-- **Calendari:** inscripcions a activitats amb control de places 📆
-- **Pobles:** fitxes dels municipis més rellevants 🏘️
-- **Contacte:** formulari i FAQ ✉️
+La web ha estat pensada per adaptar-se correctament a tot tipus de dispositius, fent ús de:
+	•	Sistema de graelles de Bootstrap 5: una estructura basada en columnes que facilita el disseny flexible.
+	•	Imatges .img-fluid: que s’adapten a la mida de la pantalla.
+	•	Menú responsive (hamburguesa 🍔): utilitza les classes collapse i navbar-toggler per mostrar un menú plegable a dispositius petits.
+	•	Classes com container, row, col-md-6, d-flex: per organitzar el contingut amb flexibilitat i alineació correcta.
+	•	aria-labels i etiquetatge: atributs HTML que ajuden als lectors de pantalla a interpretar correctament la interfície .
 
-📋 S’han utilitzat:
-- Llistes amb icones per facilitar la lectura.
-- Taules per gestionar inscripcions.
-- Seccions separades visualment amb colors i marges.
-- Responsive layout adaptat a Bootstrap per facilitar la lectura en tots els dispositius.
+També s’han aplicat bones pràctiques com:
+	•	Contrastos adequats entre text i fons.
+	•	alt a les imatges, que proporciona una descripció alternativa per a persones amb dificultats visuals.
+	•	Transicions suaus (hover, scroll) que milloren l’experiència d’usuari.
 
----
+⸻
 
-## 4️⃣ Web responsive 📱💻
+5⃣⃣ Cartografia i mapa interactiu
 
-Per fer la web responsive s’ha utilitzat el framework **Bootstrap 5**, aprofitant:
+El mapa ha estat elaborat amb QGIS i exportat mitjançant qgis2web, permetent visualització amb Leaflet.js. Aquest inclou:
+	•	Capes de rutes codificades per dificultat: color verd (fàcil), morat (moderada), vermell (difícil).
+	•	Pop-ups amb informació de cada itinerari: descripció, durada i dificultat.
+	•	Base cartogràfica: ESRI World Topo, Ortofoto de Catalunya (ICC), Google Satellite Hybrid.
+	•	Capa de punts amb pobles i icones personalitzades.
+	•	Llegenda integrada que explica el significat dels colors i icones.
+	•	Mapa centrat segons dispositiu: adaptació de la vista inicial en funció de la mida de pantalla per facilitar la navegació.
 
-- El sistema de columnes (`row`, `col-md-6`...) 🧱
-- Classes per a marges i espaiats (`mb-3`, `p-4`...)
-- Botons adaptatius (`btn`, `btn-success`) 🎯
-- Menú responsive amb `navbar-expand-md` i `collapse` 🍔
-- Imatges adaptades amb `.img-fluid` 🖼️
+⸻
 
-A més, s'han fet ajustos amb CSS personalitzat per millorar compatibilitat i estètica.
+6⃣⃣ Dificultats, aprenentatges i millores futures
 
----
+🔧 Dificultats:
+	•	Integració del mapa a la web (paths relatius, gestió d’arxius locals i estructura de carpetes).
+	•	Adaptació dels estils propis als components predefinits de Bootstrap.
 
-## 5️⃣ Cartografia 🗺️
+📚 Aprenentatges:
+	•	Comprensió del DOM (Document Object Model): estructura jeràrquica dels elements HTML que es pot modificar dinàmicament amb JavaScript.
+	•	Gestió d’esdeveniments com clicks, submit o scroll amb JS per millorar la interactivitat.
+	•	Domini bàsic de Bootstrap: creació de dissenys responsive, menús, formularis i botons amb codi senzill.
+	•	Elaboració i integració d’un mapa interactiu propi, on les capes i les dades visuals han estat generades des de zero amb eines SIG.
 
-Els mapes han estat creats amb **QGIS**, utilitzant:
+🚀 Millores futures:
+	•	Crear un panell d’administració per gestionar activitats i inscripcions de forma segura.
+	•	Afegir fitxes descarregables en PDF i GPX per a cada ruta.
+	•	Traducció multilingüe de la web per fer-la accessible a turistes (ex: anglès i francès).
+	•	Incorporar nocions de SEO (Search Engine Optimization) per millorar el posicionament en cercadors i analítica web (Google Analytics o Plausible) per fer seguiment del comportament dels usuaris.
 
-- Capes de línies per a les rutes.
-- Dades pròpies georeferenciades.
-- Exportació amb **qgis2web** per generar un mapa Leaflet.
+⸻
 
-El mapa mostra:
-- Rutes amb nivells de dificultat (color diferent).
-- Informació emergent al clicar sobre cada ruta (popup).
-- Visualització adaptada a mòbil.
-
----
-
-## 6️⃣ Dificultats i millores 💡
-
-### Dificultats trobades:
-- Integració inicial del mapa Leaflet.
-- Canvi de codi personalitzat a Bootstrap.
-- Control de places en inscripcions (JS dinàmic).
-
-### Possibles millores futures:
-- Afegir base de dades per gestionar inscripcions amb PHP/MySQL.
-- Més filtres i categories de rutes.
-- Galeria amb lightbox i fitxes descarregables en PDF.
-- Traducció a diversos idiomes 🌍
-
----
-
-## 🚀 Gràcies per visitar **Rutes Cara Nord**!
+🙌 Gràcies per visitar Rutes Cara Nord!
 
 Si tens suggeriments, dubtes o vols fer una ruta amb nosaltres, escriu-nos! 📩
