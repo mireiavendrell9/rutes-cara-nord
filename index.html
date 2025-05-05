@@ -41,8 +41,9 @@
     </div>
   </header>
 
-  <!-- BOTÓ TORNAR A DALT -->
-  <button id="scrollTopBtn" onclick="scrollToTop()" class="btn btn-success position-fixed end-0 bottom-0 m-4" style="display:none;">▲ Tornar a dalt</button>
+  <button id="scrollTopBtn" class="btn btn-success position-fixed end-0 bottom-0 m-4" style="display:none;">
+    ▲ Tornar a dalt
+  </button>
 
   <!-- VÍDEO -->
   <section class="py-5 bg-verdfons text-center">
@@ -96,18 +97,8 @@
       <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
     </div>
   </footer>
-
-  <!-- JS Bootstrap -->
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Script scroll top -->
-  <script>
-    window.onscroll = function () {
-      document.getElementById("scrollTopBtn").style.display =
-        window.scrollY > 300 ? "block" : "none";
-    };
-    function scrollToTop() {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  </script>
+  <script src="menu.js"></script>
 </body>
 </html>

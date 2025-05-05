@@ -221,3 +221,10 @@ footer .xarxes a:hover {
     flex: 1 1 400px;
     text-align: justify;
   }
+  #map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+  }
+  
