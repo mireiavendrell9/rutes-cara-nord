@@ -9,10 +9,14 @@ Rutes Cara Nord és una pàgina web creada per promoure el senderisme al Parc Na
 El projecte neix de la passió per la natura, la muntanya i l’educació ambiental. Com a estudiant de Geografia, he volgut aplicar coneixements tècnics, cartogràfics i comunicatius per fer arribar aquest patrimoni natural al públic.
 
 Aquesta web pretén:
-	•	Fomentar el respecte pel medi ambient.
-	•	Posar en valor els pobles rurals de l’entorn.
-	•	Contribuir al turisme local sostenible.
-	•	Servir com a recurs per a estudiants i visitants.
+
+- Fomentar el respecte pel medi ambient.
+
+- Posar en valor els pobles rurals de l’entorn.
+
+- Contribuir al turisme local sostenible.
+
+- Servir com a recurs per a estudiants i visitants.
 
 ⸻
 
