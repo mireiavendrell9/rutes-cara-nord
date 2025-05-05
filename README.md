@@ -44,13 +44,14 @@ __Eines utilitzades:__
 
 La web està estructurada de forma clara i bastant intuïtiva:
 
-Secció	Contingut principal
-Inici	Presentació visual i missatge d’introducció amb vídeo integrat
-Sobre nosaltres	Presentació de l’equip amb especialitats i frases personals
-Rutes	Mapa interactiu, galeria fotogràfica i itineraris
-Calendari	Taula d’activitats amb botó d’inscripció, informació per ruta i control d’aforament
-Pobles	Fitxes descriptives de municipis 
-Contacte	Formulari de contacte + Preguntes Freqüents 
+**Seccions de la web:**
+
+- **Inici**: Presentació visual i missatge d’introducció amb vídeo integrat.
+- **Sobre nosaltres**: Presentació de l’equip amb especialitats i frases personals.
+- **Rutes**: Mapa interactiu, galeria fotogràfica i itineraris.
+- **Calendari**: Taula d’activitats amb botó d’inscripció, informació per ruta i control d’aforament.
+- **Pobles**: Fitxes descriptives de municipis.
+- **Contacte**: Formulari de contacte + Preguntes Freqüents. 
 
 ⸻
 
