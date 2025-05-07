@@ -117,11 +117,11 @@ __📚 Aprenentatges:__
 __🚀 Millores futures:__
 - Crear un panell d’administració per gestionar activitats i inscripcions de forma segura.
 
-- Afegir fitxes descarregables en PDF i GPX per a cada ruta.
+- Afegir fitxes descarregables en PDF i GPX per a cada ruta amb dades tècniques i consells útils.
 
-- Traducció multilingüe de la web per fer-la accessible a turistes (ex: anglès i francès).
+- Traducció multilingüe de la web (anglès, francès…) per fer-la més accessible a turistes internacionals.
 
-- Incorporar nocions de SEO (Search Engine Optimization) per millorar el posicionament en cercadors i analítica web (Google Analytics o Plausible) per fer seguiment del comportament dels usuaris.
+- Incorporar una previsió meteorològica integrada.
 
 ⸻
 
