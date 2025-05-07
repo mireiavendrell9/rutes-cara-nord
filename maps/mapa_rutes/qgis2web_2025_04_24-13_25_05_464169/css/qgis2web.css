@@ -204,8 +204,8 @@ a {
   }
   
   .leaflet-popup {
-    max-width: 700px !important;
-    width: auto !important;
+    max-width: 700px;
+    width: auto;
   }
   
   #map {
