@@ -24,4 +24,5 @@ Desktop.ini
 # 🌐 Altres possibles carpetes de node o entorns moderns (si algun dia afegeixes build tools)
 node_modules/
 dist/
+git ls-files | grep .DS_Store
 find . -name ".DS_Store" -exec git rm --cached {} \;
