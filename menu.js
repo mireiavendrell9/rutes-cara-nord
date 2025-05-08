@@ -90,3 +90,4 @@ const imatgesGaleria = [
     // Repren el slider en treure el cursor
     imatge.addEventListener("mouseout", iniciarSlider);
   });
+  

@@ -4,28 +4,28 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rutes - Rutes pels Ports</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-  <link rel="stylesheet" href="style.css"> 
 </head>
 
 <body class="bg-success-subtle">
 
 <!--  Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
-  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+  <div class="container-fluid px-4">
     <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <img src="images/logo.png" alt="Logo" width="50" class="me-2" />
+      <img src="./images/logo.png" alt="Logo Cara Nord" width="50" height="50" class="me-2">
       <span>Rutes Cara Nord</span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="index.html">Inici</a></li>
         <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre Nosaltres</a></li>
-        <li class="nav-item"><a class="nav-link active" href="rutes.html">Rutes</a></li>
+        <li class="nav-item"><a class="nav-link" href="rutes.html">Rutes</a></li>
         <li class="nav-item"><a class="nav-link" href="calendari.html">Calendari</a></li>
         <li class="nav-item"><a class="nav-link" href="pobles.html">Pobles</a></li>
         <li class="nav-item"><a class="nav-link" href="contacte.html">Contacte</a></li>
@@ -41,20 +41,52 @@
 <!-- Contingut -->
 <main class="container py-5 mt-5">
 
-  <!-- Mapa -->
-  <section class="text-center mb-5 py-5">
-     <h2 class="mb-4">Descobreix les rutes del Parc Natural dels Ports</h2>
-    <p class="lead mb-4">Explora les rutes fàcils, moderades i difícils sobre el mapa interactiu. Fes clic sobre qualsevol traçat per veure més informació.</p>
-  
+  <!-- Múltiples mapes per dificultat -->
+<section class="text-center mb-5 py-5">
+  <h2 class="mb-4">Descobreix les rutes del Parc Natural dels Ports</h2>
+  <p class="lead mb-5">
+    En aquesta secció trobaràs tres mapes interactius separats per dificultat: rutes fàcils, moderades i difícils. Pots explorar cada mapa i clicar sobre els traçats per obtenir més informació detallada de cada itinerari.
+  </p>
+
+  <!-- Mapa 1: Rutes Fàcils -->
+  <div class="mb-5">
+    <h3 class="mb-3">🌱 Rutes Fàcils</h3>
     <div class="d-flex justify-content-center">
       <iframe 
-      src="./maps/mapa_rutes/qgis2web_2025_04_24-13_25_05_464169/index.html" 
-      title="Mapa de Rutes"
-      style="border: none; width: 100%; max-width: 1200px; height: 90vh; border-radius: 10px; box-shadow: 0 0 15px rgba(0,0,0,0.1);" 
-      allowfullscreen>
+        src="./maps/mapa_facil/index.html" 
+        title="Mapa de Rutes Fàcils"
+        style="border: none; width: 100%; max-width: 1150px; height: 100vh; border-radius: 10px;"
+        allowfullscreen>
       </iframe>
     </div>
-  </section>
+  </div>
+
+  <!-- Mapa 2: Rutes Moderades -->
+  <div class="mb-5">
+    <h3 class="mb-3">🌿 Rutes Moderades</h3>
+    <div class="d-flex justify-content-center">
+      <iframe 
+        src="./maps/mapa_moderat/index.html" 
+        title="Mapa de Rutes Moderades"
+        style="border: none; width: 100%; max-width: 1150px; height: 100vh; border-radius: 10px;"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <!-- Mapa 3: Rutes Difícils -->
+  <div class="mb-5">
+    <h3 class="mb-3">⛰️ Rutes Difícils</h3>
+    <div class="d-flex justify-content-center">
+      <iframe 
+        src="./maps/mapa_dificil/index.html" 
+        title="Mapa de Rutes Difícils"
+        style="border: none; width: 100%; max-width: 1150px; height: 100vh; border-radius: 10px;"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</section>
 
   <!-- Galeria -->
 <section class="galeria-fotos mb-5 bg-verdfons">
