@@ -8,6 +8,7 @@ body {
 }
 
 /* Navbar personalitzat */
+
 .navbar-custom {
     background: #1A7742;
     height: 70px; /* alçada fixa */
@@ -19,14 +20,24 @@ body {
   }
   
   .navbar-custom .nav-link {
-    color: black !important; /* color per defecte */
+    color: white  !important; /* color per defecte */
     font-weight: 500;
-    font-size: 18px;
+    font-size: 19px;
     transition: color 0.3s ease;
   }
   
   .navbar-custom .nav-link:hover {
-    color: white !important; /* quan hi passes el cursor */
+    color: black !important; /* quan hi passes el cursor */
+  }
+  .navbar-brand span {
+    color: #ffffff; 
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .navbar-collapse {
+    background-color:#1A7742 ;
+    padding: 10px;
+    border-radius: 6px;
   }
 
 /* Hero */
