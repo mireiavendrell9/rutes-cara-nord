@@ -119,9 +119,15 @@ __🚀 Millores futures:__
 
 - Afegir fitxes descarregables en PDF i GPX per a cada ruta amb dades tècniques i consells útils.
 
+<<<<<<< HEAD
 - Traducció multilingüe de la web (anglès, francès…) per fer-la més accessible a turistes internacionals.
 
 - Incorporar una previsió meteorològica integrada.
+=======
+- Traducció multilingüe de la web automàticament (anglès, francès…) per fer-la més accessible a turistes internacionals.
+
+- Incorporar una previsió meteorològica integrada..
+>>>>>>> 873be1e081678e92c083448ea5c3e7b9c55be14c
 
 ⸻
 
