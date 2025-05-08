@@ -346,20 +346,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	box-shadow: 0 1px 5px rgba(0,0,0,0.4);
 	background: #fff;
 	border-radius: 5px;
-	max-width: 90vw;
-    word-wrap: break-word;
-   font-size: 0.9em;
-   z-index: 1100;
-}
-@media (max-width: 600px) {
-	.leaflet-control-layers {
-	  font-size: 0.8em;
-	  padding: 8px;
-	  left: 10px !important;
-	  right: 10px !important;
-	  bottom: 10px !important;
 	}
-  }
 .leaflet-control-layers-toggle {
 	background-image: url(images/layers.png);
 	width: 36px;

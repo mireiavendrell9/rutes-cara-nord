@@ -32,16 +32,15 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
-        <script src="js/leaflet.wms.js"></script>
         <script src="js/leaflet-measure.js"></script>
-        <script src="data/ParcNaturaldelsPorts_3.js"></script>
-        <script src="data/Poblesdelazona_4.js"></script>
-        <script src="data/punt_dinici_5.js"></script>
-        <script src="data/Fcil_6.js"></script>
+        <script src="data/ParcNaturaldelsPorts_1.js"></script>
+        <script src="data/Poblesdelazona_2.js"></script>
+        <script src="data/puntdinici_3.js"></script>
+        <script src="data/Fcil_4.js"></script>
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:10
-        }).fitBounds([[40.6018870639433,0.11358503159418465],[41.011473734026275,0.6949853308159005]]);
+        }).fitBounds([[40.6396866327545,0.14252289856260378],[40.991090788362904,0.6413342519131777]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -89,35 +88,10 @@
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
-        map.createPane('pane_GoogleSatelliteHybrid_0');
-        map.getPane('pane_GoogleSatelliteHybrid_0').style.zIndex = 400;
-        var layer_GoogleSatelliteHybrid_0 = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
-            pane: 'pane_GoogleSatelliteHybrid_0',
-            opacity: 1.0,
-            attribution: '',
-            minZoom: 10,
-            maxZoom: 28,
-            minNativeZoom: 0,
-            maxNativeZoom: 19
-        });
-        layer_GoogleSatelliteHybrid_0;
-        map.createPane('pane_OrtofotodeCatalunyacolorvigent_1');
-        map.getPane('pane_OrtofotodeCatalunyacolorvigent_1').style.zIndex = 401;
-        var layer_OrtofotodeCatalunyacolorvigent_1 = L.WMS.layer("https://geoserveis.icgc.cat/servei/catalunya/orto-territorial/wms", "ortofoto_color_vigent", {
-            pane: 'pane_OrtofotodeCatalunyacolorvigent_1',
-            format: 'image/png',
-            uppercase: true,
-            transparent: true,
-            continuousWorld : true,
-            tiled: true,
-            info_format: 'text/html',
-            opacity: 1,
-            attribution: '',
-        });
-        map.createPane('pane_ESRIWorldTopo_2');
-        map.getPane('pane_ESRIWorldTopo_2').style.zIndex = 402;
-        var layer_ESRIWorldTopo_2 = L.tileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
-            pane: 'pane_ESRIWorldTopo_2',
+        map.createPane('pane_ESRIWorldTopo_0');
+        map.getPane('pane_ESRIWorldTopo_0').style.zIndex = 400;
+        var layer_ESRIWorldTopo_0 = L.tileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}', {
+            pane: 'pane_ESRIWorldTopo_0',
             opacity: 1.0,
             attribution: '',
             minZoom: 10,
@@ -125,9 +99,9 @@
             minNativeZoom: 0,
             maxNativeZoom: 20
         });
-        layer_ESRIWorldTopo_2;
-        map.addLayer(layer_ESRIWorldTopo_2);
-        function pop_ParcNaturaldelsPorts_3(feature, layer) {
+        layer_ESRIWorldTopo_0;
+        map.addLayer(layer_ESRIWorldTopo_0);
+        function pop_ParcNaturaldelsPorts_1(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['popup'] !== null ? autolinker.link(String(feature.properties['popup']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -140,9 +114,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_ParcNaturaldelsPorts_3_0() {
+        function style_ParcNaturaldelsPorts_1_0() {
             return {
-                pane: 'pane_ParcNaturaldelsPorts_3',
+                pane: 'pane_ParcNaturaldelsPorts_1',
                 opacity: 1,
                 color: 'rgba(0,0,0,1.0)',
                 dashArray: '',
@@ -153,21 +127,21 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_ParcNaturaldelsPorts_3');
-        map.getPane('pane_ParcNaturaldelsPorts_3').style.zIndex = 403;
-        map.getPane('pane_ParcNaturaldelsPorts_3').style['mix-blend-mode'] = 'normal';
-        var layer_ParcNaturaldelsPorts_3 = new L.geoJson(json_ParcNaturaldelsPorts_3, {
+        map.createPane('pane_ParcNaturaldelsPorts_1');
+        map.getPane('pane_ParcNaturaldelsPorts_1').style.zIndex = 401;
+        map.getPane('pane_ParcNaturaldelsPorts_1').style['mix-blend-mode'] = 'normal';
+        var layer_ParcNaturaldelsPorts_1 = new L.geoJson(json_ParcNaturaldelsPorts_1, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_ParcNaturaldelsPorts_3',
-            layerName: 'layer_ParcNaturaldelsPorts_3',
-            pane: 'pane_ParcNaturaldelsPorts_3',
-            onEachFeature: pop_ParcNaturaldelsPorts_3,
-            style: style_ParcNaturaldelsPorts_3_0,
+            dataVar: 'json_ParcNaturaldelsPorts_1',
+            layerName: 'layer_ParcNaturaldelsPorts_1',
+            pane: 'pane_ParcNaturaldelsPorts_1',
+            onEachFeature: pop_ParcNaturaldelsPorts_1,
+            style: style_ParcNaturaldelsPorts_1_0,
         });
-        bounds_group.addLayer(layer_ParcNaturaldelsPorts_3);
-        map.addLayer(layer_ParcNaturaldelsPorts_3);
-        function pop_Poblesdelazona_4(feature, layer) {
+        bounds_group.addLayer(layer_ParcNaturaldelsPorts_1);
+        map.addLayer(layer_ParcNaturaldelsPorts_1);
+        function pop_Poblesdelazona_2(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['photo'] !== null ? autolinker.link(String(feature.properties['photo']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -180,39 +154,39 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_Poblesdelazona_4_0() {
+        function style_Poblesdelazona_2_0() {
             return {
-                pane: 'pane_Poblesdelazona_4',
+                pane: 'pane_Poblesdelazona_2',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/Poblesdelazona_4.svg',
+            iconUrl: 'markers/Poblesdelazona_2.svg',
             iconSize: [15.2, 15.2]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_Poblesdelazona_4');
-        map.getPane('pane_Poblesdelazona_4').style.zIndex = 404;
-        map.getPane('pane_Poblesdelazona_4').style['mix-blend-mode'] = 'normal';
-        var layer_Poblesdelazona_4 = new L.geoJson(json_Poblesdelazona_4, {
+        map.createPane('pane_Poblesdelazona_2');
+        map.getPane('pane_Poblesdelazona_2').style.zIndex = 402;
+        map.getPane('pane_Poblesdelazona_2').style['mix-blend-mode'] = 'normal';
+        var layer_Poblesdelazona_2 = new L.geoJson(json_Poblesdelazona_2, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Poblesdelazona_4',
-            layerName: 'layer_Poblesdelazona_4',
-            pane: 'pane_Poblesdelazona_4',
-            onEachFeature: pop_Poblesdelazona_4,
+            dataVar: 'json_Poblesdelazona_2',
+            layerName: 'layer_Poblesdelazona_2',
+            pane: 'pane_Poblesdelazona_2',
+            onEachFeature: pop_Poblesdelazona_2,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_Poblesdelazona_4_0(feature));
+                return L.marker(latlng, style_Poblesdelazona_2_0(feature));
             },
         });
-        bounds_group.addLayer(layer_Poblesdelazona_4);
-        map.addLayer(layer_Poblesdelazona_4);
-        function pop_punt_dinici_5(feature, layer) {
+        bounds_group.addLayer(layer_Poblesdelazona_2);
+        map.addLayer(layer_Poblesdelazona_2);
+        function pop_puntdinici_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['fid'] !== null ? autolinker.link(String(feature.properties['fid']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -228,39 +202,39 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_punt_dinici_5_0() {
+        function style_puntdinici_3_0() {
             return {
-                pane: 'pane_punt_dinici_5',
+                pane: 'pane_puntdinici_3',
         rotationAngle: 0.0,
         rotationOrigin: 'center center',
         icon: L.icon({
-            iconUrl: 'markers/punt_dinici_5.svg',
+            iconUrl: 'markers/puntdinici_3.svg',
             iconSize: [21.28, 21.28]
         }),
                 interactive: true,
             }
         }
-        map.createPane('pane_punt_dinici_5');
-        map.getPane('pane_punt_dinici_5').style.zIndex = 405;
-        map.getPane('pane_punt_dinici_5').style['mix-blend-mode'] = 'normal';
-        var layer_punt_dinici_5 = new L.geoJson(json_punt_dinici_5, {
+        map.createPane('pane_puntdinici_3');
+        map.getPane('pane_puntdinici_3').style.zIndex = 403;
+        map.getPane('pane_puntdinici_3').style['mix-blend-mode'] = 'normal';
+        var layer_puntdinici_3 = new L.geoJson(json_puntdinici_3, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_punt_dinici_5',
-            layerName: 'layer_punt_dinici_5',
-            pane: 'pane_punt_dinici_5',
-            onEachFeature: pop_punt_dinici_5,
+            dataVar: 'json_puntdinici_3',
+            layerName: 'layer_puntdinici_3',
+            pane: 'pane_puntdinici_3',
+            onEachFeature: pop_puntdinici_3,
             pointToLayer: function (feature, latlng) {
                 var context = {
                     feature: feature,
                     variables: {}
                 };
-                return L.marker(latlng, style_punt_dinici_5_0(feature));
+                return L.marker(latlng, style_puntdinici_3_0(feature));
             },
         });
-        bounds_group.addLayer(layer_punt_dinici_5);
-        map.addLayer(layer_punt_dinici_5);
-        function pop_Fcil_6(feature, layer) {
+        bounds_group.addLayer(layer_puntdinici_3);
+        map.addLayer(layer_puntdinici_3);
+        function pop_Fcil_4(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['popup'] !== null ? autolinker.link(String(feature.properties['popup']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -273,9 +247,9 @@
 			layer.bindPopup(content, { maxHeight: 400 });
         }
 
-        function style_Fcil_6_0() {
+        function style_Fcil_4_0() {
             return {
-                pane: 'pane_Fcil_6',
+                pane: 'pane_Fcil_4',
                 opacity: 1,
                 color: 'rgba(51,160,44,1.0)',
                 dashArray: '',
@@ -286,30 +260,28 @@
                 interactive: true,
             }
         }
-        map.createPane('pane_Fcil_6');
-        map.getPane('pane_Fcil_6').style.zIndex = 406;
-        map.getPane('pane_Fcil_6').style['mix-blend-mode'] = 'normal';
-        var layer_Fcil_6 = new L.geoJson(json_Fcil_6, {
+        map.createPane('pane_Fcil_4');
+        map.getPane('pane_Fcil_4').style.zIndex = 404;
+        map.getPane('pane_Fcil_4').style['mix-blend-mode'] = 'normal';
+        var layer_Fcil_4 = new L.geoJson(json_Fcil_4, {
             attribution: '',
             interactive: true,
-            dataVar: 'json_Fcil_6',
-            layerName: 'layer_Fcil_6',
-            pane: 'pane_Fcil_6',
-            onEachFeature: pop_Fcil_6,
-            style: style_Fcil_6_0,
+            dataVar: 'json_Fcil_4',
+            layerName: 'layer_Fcil_4',
+            pane: 'pane_Fcil_4',
+            onEachFeature: pop_Fcil_4,
+            style: style_Fcil_4_0,
         });
-        bounds_group.addLayer(layer_Fcil_6);
-        map.addLayer(layer_Fcil_6);
+        bounds_group.addLayer(layer_Fcil_4);
+        map.addLayer(layer_Fcil_4);
         var overlaysTree = [
         {label: '<b>Itineraris de Cara Nord</b>',  selectAllCheckbox: true, children: [
-            {label: '<img src="legend/Fcil_6.png" /> Fàcil', layer: layer_Fcil_6},]},
-            {label: '<img src="legend/punt_dinici_5.png" /> punt_dinici', layer: layer_punt_dinici_5},
-            {label: '<img src="legend/Poblesdelazona_4.png" /> Pobles de la zona', layer: layer_Poblesdelazona_4},
-            {label: '<img src="legend/ParcNaturaldelsPorts_3.png" /> Parc Natural dels Ports', layer: layer_ParcNaturaldelsPorts_3},
+            {label: '<img src="legend/Fcil_4.png" /> Fàcil', layer: layer_Fcil_4},]},
+            {label: '<img src="legend/puntdinici_3.png" /> punt d\'inici', layer: layer_puntdinici_3},
+            {label: '<img src="legend/Poblesdelazona_2.png" /> Pobles de la zona', layer: layer_Poblesdelazona_2},
+            {label: '<img src="legend/ParcNaturaldelsPorts_1.png" /> Parc Natural dels Ports', layer: layer_ParcNaturaldelsPorts_1},
         {label: '<b>Mapes de fons</b>',  selectAllCheckbox: true, children: [
-            {label: "ESRI World Topo", layer: layer_ESRIWorldTopo_2},
-            {label: "Ortofoto de Catalunya color vigent", layer: layer_OrtofotodeCatalunyacolorvigent_1},
-            {label: "Google Satellite Hybrid", layer: layer_GoogleSatelliteHybrid_0},]},]
+            {label: "ESRI World Topo", layer: layer_ESRIWorldTopo_0},]},]
         var lay = L.control.layers.tree(null, overlaysTree,{
             //namedToggle: true,
             //selectorBack: false,
@@ -372,27 +344,27 @@
         });       
         setBounds();
         var i = 0;
-        layer_punt_dinici_5.eachLayer(function(layer) {
+        layer_puntdinici_3.eachLayer(function(layer) {
             var context = {
                 feature: layer.feature,
                 variables: {}
             };
-            layer.bindTooltip((layer.feature.properties['nom'] !== null?String('<div style="color: #323232; font-size: 8pt; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['nom']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_punt_dinici_5'});
+            layer.bindTooltip((layer.feature.properties['nom'] !== null?String('<div style="color: #323232; font-size: 8pt; font-family: \'Open Sans\', sans-serif;">' + layer.feature.properties['nom']) + '</div>':''), {permanent: true, offset: [-0, -16], className: 'css_puntdinici_3'});
             labels.push(layer);
             totalMarkers += 1;
               layer.added = true;
               addLabel(layer, i);
               i++;
         });
-        resetLabels([layer_Poblesdelazona_4,layer_punt_dinici_5]);
+        resetLabels([layer_Poblesdelazona_2,layer_puntdinici_3]);
         map.on("zoomend", function(){
-            resetLabels([layer_Poblesdelazona_4,layer_punt_dinici_5]);
+            resetLabels([layer_Poblesdelazona_2,layer_puntdinici_3]);
         });
         map.on("layeradd", function(){
-            resetLabels([layer_Poblesdelazona_4,layer_punt_dinici_5]);
+            resetLabels([layer_Poblesdelazona_2,layer_puntdinici_3]);
         });
         map.on("layerremove", function(){
-            resetLabels([layer_Poblesdelazona_4,layer_punt_dinici_5]);
+            resetLabels([layer_Poblesdelazona_2,layer_puntdinici_3]);
         });
         </script>
     </body>
