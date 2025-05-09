@@ -31,6 +31,7 @@
           <li class="nav-item"><a class="nav-link" href="rutes.html">Rutes</a></li>
           <li class="nav-item"><a class="nav-link" href="calendari.html">Calendari</a></li>
           <li class="nav-item"><a class="nav-link" href="pobles.html">Pobles</a></li>
+          <li class="nav-item"><a class="nav-link" href="temps.html">Temps</a></li>
           <li class="nav-item"><a class="nav-link active" href="contacte.html">Contacte</a></li>
         </ul>
       </div>
@@ -39,34 +40,34 @@
 
 
   <!-- Contacte -->
-  <main class="py-5 mt-5 bg-verdfons">
-    <div class="container text-center">
-      <h1 class="mb-3">Contacta'ns</h1>
-      <p class="mb-4">Omple el formulari següent i ens posarem en contacte amb tu el més aviat possible.</p>
+<section class="bg-verdfons py-5">
+  <div class="contacte-formulari text-center">
+    <h1 class="mb-3">📬 Contacta'ns</h1>
+    <p class="mb-4">Omple el formulari següent i ens posarem en contacte amb tu el més aviat possible.</p>
 
-      <form action="mailto:rutes_caranord@gmail.com" method="post" enctype="text/plain" class="mx-auto bg-white p-4 rounded shadow" style="max-width: 600px;">
-        <div class="mb-3 text-start">
-          <label for="nom" class="form-label">Nom:</label>
-          <input type="text" id="nom" name="nom" class="form-control" required>
-        </div>
-        <div class="mb-3 text-start">
-          <label for="email" class="form-label">Correu electrònic:</label>
-          <input type="email" id="email" name="email" class="form-control" required>
-        </div>
-        <div class="mb-3 text-start">
-          <label for="missatge" class="form-label">Missatge:</label>
-          <textarea id="missatge" name="missatge" rows="5" class="form-control" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Enviar</button>
-      </form>
+    <form action="mailto:rutes_caranord@gmail.com" method="post" enctype="text/plain" class="bg-white p-4 rounded shadow" style="max-width: 600px; margin: 0 auto;">
+      <div class="mb-3 text-start">
+        <label for="nom" class="form-label">Nom:</label>
+        <input type="text" id="nom" name="nom" class="form-control" required>
+      </div>
+      <div class="mb-3 text-start">
+        <label for="email" class="form-label">Correu electrònic:</label>
+        <input type="email" id="email" name="email" class="form-control" required>
+      </div>
+      <div class="mb-3 text-start">
+        <label for="missatge" class="form-label">Missatge:</label>
+        <textarea id="missatge" name="missatge" rows="5" class="form-control" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
 
-      <p class="mt-4">També ens pots escriure a: <a href="mailto:rutes_caranord@gmail.com">rutes_caranord@gmail.com</a></p>
-    </div>
-  </main>
+    <p class="mt-4">També ens pots escriure a: <a href="mailto:rutes_caranord@gmail.com">rutes_caranord@gmail.com</a></p>
+  </div>
+</section>
 
   <!-- Preguntes Freqüents -->
   <section class="bg-verdfons py-5">
-    <div class="bg-verdfons">
+    <div class="preguntes-frequents">
       <h2 class="text-center mb-4">❓ Preguntes Freqüents</h2>
       <p class="text-center mb-4">Resolem els teus dubtes abans que et decideixis a apuntar-te a una activitat.</p>
 
@@ -114,6 +115,25 @@
       </div>
     </div>
   </section>
+<!-- Comentaris dels visitants -->
+<section class="bg-verdfons py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">🗣️ Deixa'ns el teu comentari</h2>
+    <p class="text-center mb-4">La teva opinió ens ajuda a millorar l’experiència de senderisme pel Parc Natural dels Ports.</p>
+
+    <div class="d-flex justify-content-center">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4dqx5eIVXmpu0QjHuqztwCbNdUSX77zOA6jXW_fPEKUofSQ/viewform?embedded=true" 
+              width="100%" 
+              height="1200" 
+              frameborder="0" 
+              marginheight="0" 
+              marginwidth="0"
+              style="max-width: 800px; border-radius: 10px;">
+        Carregant…
+      </iframe>
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="bg-success text-white text-center py-4 mt-5">
