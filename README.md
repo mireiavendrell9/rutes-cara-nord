@@ -4,7 +4,7 @@ Rutes Cara Nord és una pàgina web creada per promoure el senderisme al Parc Na
 
 ⸻
 
-## 1⃣⃣ Tema i motivació**
+## 1⃣⃣ Tema i motivació
 
 El projecte neix de la passió per la natura, la muntanya i l’educació ambiental. Com a estudiant de Geografia, he volgut aplicar coneixements tècnics, cartogràfics i comunicatius per fer arribar aquest patrimoni natural al públic.
 
@@ -20,7 +20,7 @@ Aquesta web pretén:
 
 ⸻
 
-## 2⃣⃣ Dades i continguts**
+## 2⃣⃣ Dades i continguts
 
 ## Fonts d’informació
 
@@ -50,7 +50,8 @@ Aquesta web pretén:
 
 ⸻
 
-## 3⃣⃣ Estructura de la web**
+## 3⃣⃣ Estructura de la web
+
 La web *Rutes Cara Nord* es compon de diverses pàgines HTML interconnectades a través d’un menú de navegació comú. Cada pàgina aporta una funcionalitat específica, però comparteixen una estètica coherent i una estructura pensada per oferir una experiència clara, intuïtiva i agradable per a l’usuari.
 
 - **Navbar (menú de navegació):**  
@@ -82,7 +83,7 @@ La web *Rutes Cara Nord* es compon de diverses pàgines HTML interconnectades a 
 
 ⸻
 
-## 4⃣⃣ Web responsive i accessibilitat**
+## 4⃣⃣ Web responsive i accessibilitat
 
 La pàgina web ha estat dissenyada pensant en una experiència d’usuari òptima des de qualsevol dispositiu: ordinador, tauleta o mòbil. Gràcies a les eines que proporciona **Bootstrap 5** i a una estructura HTML curosament planificada, s’aconsegueix una navegació fluida i una lectura agradable independentment de la mida de pantalla.
 
@@ -111,7 +112,7 @@ S’han aplicat criteris d’accessibilitat per fer que la web sigui usable per 
 
 ⸻
 
-## 5⃣⃣ Cartografia i mapa interactiu**
+## 5⃣⃣ Cartografia i mapa interactiu
 
 Un dels elements centrals de la web és el **visor cartogràfic interactiu**, ubicat dins l’apartat *Rutes*. Aquest mapa permet explorar les diferents rutes del Parc Natural dels Ports de manera visual i intuïtiva.
 
